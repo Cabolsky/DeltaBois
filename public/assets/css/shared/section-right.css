@@ -1,0 +1,98 @@
+#section-right {
+    width: 100%; 
+}
+#section-right .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-right .containt-text {
+    overflow: hidden;
+}
+#section-right .picture-right {
+    position: relative;
+}
+#section-right .containt-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 4vw;
+}
+#section-right .p-text {
+    text-align: center;
+    margin-top: 4vw;
+}
+#section-right .title-text {
+    margin: 0;
+}
+#section-right .icon-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-right .p-liste {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #775A42;
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+    padding-left: 5vw;
+    margin-bottom: 1vw;
+}
+#section-right .p-liste::before {
+    content: "";
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #8A8A14;
+    border-radius: 50%;
+}
+@media (min-width: 768px) {
+    #section-right .container-fluid {
+        margin-top: 0vw;
+
+    }
+    #section-right .containt-title {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 1vw;
+        margin-top: 0vw;
+    }
+    #section-right .title-text {
+        margin: 0;
+        margin-top: 0vw;
+    }
+    #section-right .p-text {
+        text-align: start;
+        margin-top: 1vw;
+    }
+    #section-right .icon-bg {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-right .p-liste {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #775A42;
+        font-size: 1.2vw;
+        letter-spacing: 0.2vw;
+        padding-left: 0vw;
+        margin-bottom: 0.5vw;
+    }
+    #section-right .list-elements {
+        margin-top: 1vw;
+        margin-left: 0;
+    }
+    #section-right .p-liste::before {
+        width: 0.7vw;
+        height: 0.7vw;
+    }
+}

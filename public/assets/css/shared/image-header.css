@@ -1,0 +1,9 @@
+#picture-header .header-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+#picture-header .header-container {
+    width: 100%; 
+    overflow: hidden; 
+}

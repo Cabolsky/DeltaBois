@@ -1,0 +1,121 @@
+#cards {
+    margin: 2rem 0;
+}
+#cards .card {
+    border: none;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20vw;
+}
+#cards .card img {
+    width: auto;
+    height: 50vw;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+#cards .containt-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 4vw;
+}
+#cards .p-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4vw;
+}
+#cards .title-text {
+    margin: 0;
+    font-size: 5vw;
+}
+#cards .card-button {
+    border: 1px solid #aa8a6f;
+    overflow: hidden;
+    width: 30vw;
+    height: 10vw;
+    background-color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #8A8A14;
+    font-size: 4vw;
+}
+#cards .icon-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cards .space-cards {
+    margin-top: 5vw;
+}
+#cards .icon-bg {
+    height: 4.5vw;
+    width: 4.5vw;
+    background-color: #8A8A14;
+    color: #ffffff;
+}
+#cards .fa-solid {
+    font-size: 2.5vw;
+}
+@media (min-width: 768px) {
+    #cards .card {
+        margin-top: 0vw;
+    }
+    #cards .containt-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        margin-right: 0vw;
+    }
+    #cards .card img {
+        width: auto;
+        height: 12vw;
+        max-width: 100%;
+    }
+    #cards .card-button {
+        width: 8vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+    #cards .space-cards {
+        margin-top: 5vw;
+    }
+    #cards .card-button:hover {
+        background-color: #ffffff;
+        border: 2px solid #aa8a6f;
+    }
+    #cards .icon-bg {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #cards .title-text {
+        margin: 0;
+        margin-top: 0vw;
+        font-size: 1.5vw;
+    }
+    #cards .p-text {
+        text-align: center;
+        margin-top: 1vw;
+        font-size: 1vw;
+    }
+    #cards .icon-bg {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+    #cards .fa-solid {
+        font-size: 0.8vw;
+    }
+    #cards .card:hover img {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
+}
+    
+

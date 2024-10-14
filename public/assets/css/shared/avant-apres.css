@@ -1,0 +1,78 @@
+#avant-apres {
+    width: 100%;
+    margin: 2rem 0;
+}
+#avant-apres .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#avant-apres img {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+#avant-apres .icon-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8A8A14;
+    color: #ffffff;
+    height: 4vw;
+    width: 4vw;
+}
+#avant-apres .fa-solid {
+    font-size: 1.5vw;
+}
+#avant-apres .p-liste {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw;
+    color: #775A42;
+    margin-left: 0.5vw;
+}
+#avant-apres .containt-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#avant-apres .title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 1vw;
+
+}
+@media (min-width: 768px) {
+    #avant-apres .icon-bg {
+        height: 2vw;
+        width: 2vw;
+    }
+    #avant-apres .title-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        margin-left: 0.5vw;
+    
+    }
+    #avant-apres .containt-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #avant-apres .fa-solid {
+        font-size: 1vw;
+    }
+    #avant-apres .p-liste {
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+    }
+}

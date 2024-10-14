@@ -1,0 +1,39 @@
+#comment-header .title-comment{
+    margin: 0;
+}
+#comment-header .p-comment{
+    text-align: center;
+}
+#comment-header .containt-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#comment-header .icon-bg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    #comment-header .title-comment{
+        margin:0;
+    }
+    #comment-header .p-comment{
+        text-align: center;
+    }
+    #comment-header .containt-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+    #comment-header .icon-bg{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

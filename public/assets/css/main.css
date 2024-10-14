@@ -1,0 +1,58 @@
+@import'shared/avant-apres.css';
+@import'shared/cards.css';
+@import'shared/comment-header.css';
+@import'shared/footer.css';
+@import'shared/icon.css';
+@import'shared/image-header.css';
+@import'shared/navbar.css';
+@import'shared/picture-rule.css';
+@import'shared/section-family.css';
+@import'shared/section-left.css';
+@import'shared/section-right.css';
+@import'shared/section-produits.css';
+
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.title-comment{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #775A42;
+    font-size: 5vw;
+}
+.p-comment{
+    font-family: 'Darker Grotesque';
+    color: #775A42;
+    font-size: 3vw;
+}
+.title-text{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #775A42;
+    font-size: 5vw;
+}
+.p-text{
+    font-family: 'Darker Grotesque';
+    color: #775A42;
+    font-size: 3vw;
+}
+@media (min-width: 768px) {
+    .title-comment{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2vw;
+    }
+    .p-comment{
+        font-family: 'Darker Grotesque';
+        font-size: 1vw;
+    }
+    .title-text{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2vw;
+    }
+    .p-text{
+        font-family: 'Darker Grotesque';
+        font-size: 1.20vw;
+    }
+}

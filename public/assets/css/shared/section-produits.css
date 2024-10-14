@@ -1,0 +1,100 @@
+#section-produits {
+    width: 100%; 
+}
+#section-produits .container-fluid {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#section-produits .containt-text {
+    overflow: hidden;
+}
+#section-produits .picture-produits {
+    position: relative;
+}
+#section-produits .containt-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 4vw;
+}
+#section-produits .p-text {
+    text-align: center;
+    margin-top: 4vw;
+}
+#section-produits .title-text {
+    margin: 0;
+}
+#section-produits .icon-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-produits .p-liste {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #775A42;
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+    padding-left: 8.5vw;
+    margin-bottom: 4vw;
+}
+#section-produits .list-produits {
+    margin-top: 8vw;
+}
+#section-produits .p-liste::before {
+    content: "";
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #8A8A14;
+    border-radius: 50%;
+}
+@media (min-width: 768px) {
+    #section-produits .containt-title {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 1vw;
+        margin-top: 0vw;
+    }
+    #section-produits .title-text {
+        margin: 0;
+        margin-top: 0vw;
+    }
+    #section-produits .p-text {
+        text-align: start;
+        margin-top: 1vw;
+    }
+    #section-produits .icon-bg {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-produits .p-liste {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #775A42;
+        font-size: 1.2vw;
+        letter-spacing: 0.2vw;
+        padding-left: 0vw;
+        margin-bottom: 0.5vw;
+    }
+    #section-produits .list-elements {
+        margin-top: 1vw;
+        margin-left: 0;
+    }
+    #section-produits .list-produits{
+        margin-top: 1vw;
+    }
+    #section-produits .p-liste::before {
+        width: 0.7vw;
+        height: 0.7vw;
+    }
+}
