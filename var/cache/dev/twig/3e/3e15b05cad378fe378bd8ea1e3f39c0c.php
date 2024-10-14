@@ -98,29 +98,10 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
         // line 4
         yield "    <!-- N A V B A R -->
-    <section id=\"navbar\">
-        <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
-            <div class=\"container-fluid\">
-                <a class=\"navbar-brand\" href=\"#\">   
-                </a>
-                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"navbar-toggler-icon\"></span>
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto\">
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"index.html\">ACCUEIL</a>
-                        </li>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"produits.html\">NOS PRODUITS</a>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"contact.html\">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+    ";
+        // line 5
+        yield from         $this->loadTemplate("_partials/navbar.html.twig", "contact/index.html.twig", 5)->unwrap()->yield($context);
+        yield " 
     <!-- N A V B A R -->
 
 
@@ -129,11 +110,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 35
+        // line 13
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 36
+        // line 14
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -143,92 +124,10 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
 
     <!-- C O M M E N T - H E A D E R -->
-    <section id=\"comment-header\">
-        <div id=\"comment-slider\" class=\"carousel slide d-md-none\" data-bs-ride=\"carousel\">
-            <div class=\"carousel-inner my-4\">
-                <div class=\"carousel-item active\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-tree\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-people-group\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-truck\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=\"row col-11 mx-auto d-none d-md-flex mt-md-5\">
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-tree\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-truck\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-        </div>
-    </section>
+    ";
+        // line 22
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 22)->unwrap()->yield($context);
+        yield "  
     <!-- C O M M E N T - H E A D E R -->
 
 
@@ -237,11 +136,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-md-4\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 137
+        // line 30
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 138
+        // line 31
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -254,7 +153,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"section-left\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5  mt-md-5\">
             <img src=\"";
-        // line 148
+        // line 41
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-7.jpg"), "html", null, true);
         yield "\" alt=\"Photo du Chateau Lucas II\" class=\"picture-left img-fluid col-md-6 order-md-1 order-1\">
             <div class=\"containt-text col-md-6 order-md-2 order-2\">
@@ -284,7 +183,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"localisation\">
         <div class=\"col-10 mx-auto mt-5\">
             <img class=\"img-fluid\" src=\"";
-        // line 175
+        // line 68
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/localisation.png"), "html", null, true);
         yield "\" alt=\"Header Image\">
         </div>
@@ -297,7 +196,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"container-family col-md-8 mx-auto mt-4 mt-md-5\">
             <div class=\"presentation\">
                 <img src=\"";
-        // line 185
+        // line 78
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-5.jpg"), "html", null, true);
         yield "\" alt=\"Hugo CAZADIEU\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -325,7 +224,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 210
+        // line 103
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-4.jpg"), "html", null, true);
         yield "\" alt=\"Person 2\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -347,7 +246,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 229
+        // line 122
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-6.jpg"), "html", null, true);
         yield "\" alt=\"Person 3\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -379,7 +278,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"section-right\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
             <img src=\"";
-        // line 258
+        // line 151
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-3.jpg"), "html", null, true);
         yield "\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
             <div class=\"containt-text col-md-6 order-md-1 order-2\">
@@ -407,11 +306,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 283
+        // line 176
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 284
+        // line 177
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -421,92 +320,10 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
 
     <!-- C O M M E N T - H E A D E R -->
-    <section id=\"comment-header\">
-        <div id=\"comment-slider\" class=\"carousel slide d-md-none mt-5 mt-md-0\" data-bs-ride=\"carousel\">
-            <div class=\"carousel-inner my-4\">
-                <div class=\"carousel-item active\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-tree\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-people-group\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-truck\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=\"row col-11 mx-auto d-none d-md-flex mt-md-5\">
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-tree\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-truck\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-        </div>
-    </section>
+    ";
+        // line 185
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 185)->unwrap()->yield($context);
+        yield "  
     <!-- C O M M E N T - H E A D E R -->
     
     
@@ -515,11 +332,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-3 mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 385
+        // line 193
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 386
+        // line 194
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -588,7 +405,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  523 => 386,  519 => 385,  415 => 284,  411 => 283,  383 => 258,  351 => 229,  329 => 210,  301 => 185,  288 => 175,  258 => 148,  245 => 138,  241 => 137,  137 => 36,  133 => 35,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  340 => 194,  336 => 193,  325 => 185,  314 => 177,  310 => 176,  282 => 151,  250 => 122,  228 => 103,  200 => 78,  187 => 68,  157 => 41,  144 => 31,  140 => 30,  129 => 22,  118 => 14,  114 => 13,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -597,29 +414,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 {% block title %}Hello ContactController!{% endblock %}
 {% block body %}
     <!-- N A V B A R -->
-    <section id=\"navbar\">
-        <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
-            <div class=\"container-fluid\">
-                <a class=\"navbar-brand\" href=\"#\">   
-                </a>
-                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"navbar-toggler-icon\"></span>
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto\">
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"index.html\">ACCUEIL</a>
-                        </li>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"produits.html\">NOS PRODUITS</a>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"contact.html\">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+    {% include('_partials/navbar.html.twig') %} 
     <!-- N A V B A R -->
 
 
@@ -636,92 +431,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
 
     <!-- C O M M E N T - H E A D E R -->
-    <section id=\"comment-header\">
-        <div id=\"comment-slider\" class=\"carousel slide d-md-none\" data-bs-ride=\"carousel\">
-            <div class=\"carousel-inner my-4\">
-                <div class=\"carousel-item active\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-tree\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-people-group\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-truck\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=\"row col-11 mx-auto d-none d-md-flex mt-md-5\">
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-tree\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-truck\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-        </div>
-    </section>
+    {% include('_partials/comment.html.twig') %}  
     <!-- C O M M E N T - H E A D E R -->
 
 
@@ -884,92 +594,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
 
     <!-- C O M M E N T - H E A D E R -->
-    <section id=\"comment-header\">
-        <div id=\"comment-slider\" class=\"carousel slide d-md-none mt-5 mt-md-0\" data-bs-ride=\"carousel\">
-            <div class=\"carousel-inner my-4\">
-                <div class=\"carousel-item active\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-tree\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-people-group\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-                <div class=\"carousel-item\">
-                    <div class=\"col-12\">
-                        <div class=\"containt-title\">
-                            <div class=\"icon-bg\">
-                                <i class=\"fa-solid fa-truck\"></i>
-                            </div>
-                            <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                        </div>
-                        <p class=\"p-comment col-9 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=\"row col-11 mx-auto d-none d-md-flex mt-md-5\">
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-tree\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-            <div class=\"col-12 col-md-4\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-truck\"></i>
-                    </div>
-                    <h1 class=\"title-comment\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-comment col-12 col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo.</p>
-            </div>
-        </div>
-    </section>
+    {% include('_partials/comment.html.twig') %}  
     <!-- C O M M E N T - H E A D E R -->
     
     

@@ -73,7 +73,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Hello IndexController!";
+        yield "ACCUEIL";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -483,7 +483,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
-{% block title %}Hello IndexController!{% endblock %}
+{% block title %}ACCUEIL{% endblock %}
 {% block body %}
     <!-- N A V B A R -->
     {% include('_partials/navbar.html.twig') %} 

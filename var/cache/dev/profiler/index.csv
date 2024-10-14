@@ -389,3 +389,12 @@ b0a31f,127.0.0.1,GET,http://127.0.0.1:8000/,1728914748,,404,request
 42d680,127.0.0.1,GET,http://127.0.0.1:8000/index,1728914804,,200,request
 a4f82f,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1728914805,d29562,404,request
 d29562,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1728914805,,404,request
+24a2d8,127.0.0.1,GET,http://127.0.0.1:8000/,1728916296,,200,request
+d195c5,127.0.0.1,GET,http://127.0.0.1:8000/,1728916322,,200,request
+c7b634,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1728916325,01c1a2,404,request
+01c1a2,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1728916325,,404,request
+6a9d0c,127.0.0.1,GET,http://127.0.0.1:8000/produits.html,1728916339,a18a04,404,request
+a18a04,127.0.0.1,GET,http://127.0.0.1:8000/produits.html,1728916339,,404,request
+ca6e37,127.0.0.1,GET,http://127.0.0.1:8000/contact.html,1728916343,d15473,404,request
+d15473,127.0.0.1,GET,http://127.0.0.1:8000/contact.html,1728916344,,404,request
+6f41ac,127.0.0.1,GET,http://127.0.0.1:8000/contact,1728916359,,200,request
