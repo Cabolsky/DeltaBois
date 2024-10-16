@@ -115,7 +115,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container\">
+        <div class=\"header-container mt-md-4 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 18
@@ -300,7 +300,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
     
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-3 mt-md-5\">
+        <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 155
@@ -308,9 +308,13 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
         yield "\">
                 <img class=\"header-image\" src=\"";
         // line 156
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.-phone.jpg"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
+            <img class=\"logo-flou\" src=\"";
+        // line 158
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
+        yield "\" alt=\"Logo Flou\">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
@@ -376,7 +380,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  311 => 156,  307 => 155,  296 => 147,  285 => 139,  281 => 138,  261 => 121,  249 => 112,  221 => 87,  208 => 77,  204 => 76,  194 => 69,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  316 => 158,  311 => 156,  307 => 155,  296 => 147,  285 => 139,  281 => 138,  261 => 121,  249 => 112,  221 => 87,  208 => 77,  204 => 76,  194 => 69,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -396,7 +400,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container\">
+        <div class=\"header-container mt-md-4 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-1.jpg') }}\">
                 <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">
@@ -533,11 +537,12 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
     
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-3 mt-md-5\">
+        <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-1.jpg') }}\">
-                <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1.-phone.jpg') }}\" alt=\"Header Image\">
+                <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">
             </picture>
+            <img class=\"logo-flou\" src=\"{{ asset('assets/images/logo-flou.png') }}\" alt=\"Logo Flou\">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->

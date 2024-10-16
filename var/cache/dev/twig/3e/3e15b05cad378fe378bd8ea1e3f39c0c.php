@@ -115,11 +115,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container\">
+        <div class=\"header-container mt-md-4 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 18
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.jpg"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
         // line 19
@@ -341,7 +341,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-3 mt-md-5\">
+        <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 199
@@ -352,6 +352,10 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
+            <img class=\"logo-flou\" src=\"";
+        // line 202
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
+        yield "\" alt=\"Logo Flou\">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
@@ -417,7 +421,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  352 => 200,  348 => 199,  337 => 191,  326 => 183,  322 => 182,  294 => 157,  262 => 128,  240 => 109,  212 => 84,  199 => 74,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  357 => 202,  352 => 200,  348 => 199,  337 => 191,  326 => 183,  322 => 182,  294 => 157,  262 => 128,  240 => 109,  212 => 84,  199 => 74,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -437,9 +441,9 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container\">
+        <div class=\"header-container mt-md-4 mt-0\">
             <picture>
-                <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-1.jpg') }}\">
+                <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-header-contact.jpg') }}\">
                 <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"{{ asset('assets/images/logo-flou.png') }}\" alt=\"Logo Flou\">
@@ -618,11 +622,12 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-3 mt-md-5\">
+        <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-header-contact.jpg') }}\">
                 <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">
             </picture>
+            <img class=\"logo-flou\" src=\"{{ asset('assets/images/logo-flou.png') }}\" alt=\"Logo Flou\">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
