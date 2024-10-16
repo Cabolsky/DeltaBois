@@ -55,14 +55,23 @@ class __TwigTemplate_4fdd41b6e58aeaf16e5bc4dfec87f710 extends Template
                     <span class=\"navbar-toggler-icon\"></span>
                 </button>
                 <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto\">
+                    <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
                         <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"index.html\">ACCUEIL</a>
+                            <a class=\"nav-link active\" aria-current=\"page\" href=\"";
+        // line 13
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
+        yield "\">ACCUEIL</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"produits.html\">NOS PRODUITS</a>
+                            <a class=\"nav-link\" href=\"";
+        // line 16
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_produits");
+        yield "\">NOS PRODUITS</a>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"contact.html\">CONTACT</a>
+                            <a class=\"nav-link\" href=\"";
+        // line 18
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
+        yield "\">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -90,9 +99,17 @@ class __TwigTemplate_4fdd41b6e58aeaf16e5bc4dfec87f710 extends Template
     /**
      * @codeCoverageIgnore
      */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
     public function getDebugInfo(): array
     {
-        return array (  48 => 1,);
+        return array (  73 => 18,  68 => 16,  62 => 13,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -107,14 +124,14 @@ class __TwigTemplate_4fdd41b6e58aeaf16e5bc4dfec87f710 extends Template
                     <span class=\"navbar-toggler-icon\"></span>
                 </button>
                 <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto\">
+                    <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
                         <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"index.html\">ACCUEIL</a>
+                            <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_index') }}\">ACCUEIL</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"produits.html\">NOS PRODUITS</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_produits') }}\">NOS PRODUITS</a>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"contact.html\">CONTACT</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_contact') }}\">CONTACT</a>
                         </li>
                     </ul>
                 </div>

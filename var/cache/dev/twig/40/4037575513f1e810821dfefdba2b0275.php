@@ -305,43 +305,10 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
 
 
     <!-- P I C T U R E - P R O D U I T S -->
-    <section id=\"section-produits\">
-        <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
-            <img src=\"";
-        // line 178
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-8.jpg"), "html", null, true);
-        yield "\" alt=\"\" class=\"picture-produits img-fluid col-md-6 order-md-2 order-1\">
-            <div class=\"containt-text col-md-6 order-md-1 order-2\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                    <div class=\"col-12 row list-produits\">
-                        <ul class=\"list-elements col-6\">
-                            <li class=\"p-liste\">BOIS RONDS</li>
-                            <li class=\"p-liste\">BOIS BRUTS DE SCIAGE</li>
-                            <li class=\"p-liste\">BOIS RABOTÉS</li>
-                            <li class=\"p-liste\">TRAVERSES CHÊNE</li>
-                        </ul>
-                        <ul class=\"list-elements col-6\">
-                            <li class=\"p-liste\">PANNEAUX BRISE-VUE</li>
-                            <li class=\"p-liste\">QUINCAILLERIES</li>
-                            <li class=\"p-liste\">ENTRETIEN DU BOIS</li>
-                            <li class=\"p-liste\">PRODUITS DERIVÉS</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </section>
+    ";
+        // line 176
+        yield from         $this->loadTemplate("_partials/produits.html.twig", "index/index.html.twig", 176)->unwrap()->yield($context);
+        yield "  
     <!-- P I C T U R E - P R O D U I T S -->
 
 
@@ -349,7 +316,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
     <section id=\"section-left\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5  mt-md-5\">
             <img src=\"";
-        // line 216
+        // line 183
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-7.jpg"), "html", null, true);
         yield "\" alt=\"Photo du Chateau Lucas II\" class=\"picture-left img-fluid col-md-6 order-md-1 order-1\">
             <div class=\"containt-text col-md-6 order-md-2 order-2\">
@@ -378,11 +345,11 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 242
+        // line 209
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 243
+        // line 210
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -393,8 +360,8 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 251
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "index/index.html.twig", 251)->unwrap()->yield($context);
+        // line 218
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "index/index.html.twig", 218)->unwrap()->yield($context);
         yield " 
     <!-- C O M M E N T - H E A D E R -->
     
@@ -404,11 +371,11 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         <div class=\"header-container mt-3 mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 259
+        // line 226
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 260
+        // line 227
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -477,7 +444,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  412 => 260,  408 => 259,  397 => 251,  386 => 243,  382 => 242,  353 => 216,  312 => 178,  298 => 167,  267 => 139,  235 => 110,  213 => 91,  185 => 66,  157 => 41,  144 => 31,  140 => 30,  129 => 22,  118 => 14,  114 => 13,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  379 => 227,  375 => 226,  364 => 218,  353 => 210,  349 => 209,  320 => 183,  310 => 176,  298 => 167,  267 => 139,  235 => 110,  213 => 91,  185 => 66,  157 => 41,  144 => 31,  140 => 30,  129 => 22,  118 => 14,  114 => 13,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -657,40 +624,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
 
 
     <!-- P I C T U R E - P R O D U I T S -->
-    <section id=\"section-produits\">
-        <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
-            <img src=\"{{ asset('assets/images/picture-8.jpg') }}\" alt=\"\" class=\"picture-produits img-fluid col-md-6 order-md-2 order-1\">
-            <div class=\"containt-text col-md-6 order-md-1 order-2\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                    <div class=\"col-12 row list-produits\">
-                        <ul class=\"list-elements col-6\">
-                            <li class=\"p-liste\">BOIS RONDS</li>
-                            <li class=\"p-liste\">BOIS BRUTS DE SCIAGE</li>
-                            <li class=\"p-liste\">BOIS RABOTÉS</li>
-                            <li class=\"p-liste\">TRAVERSES CHÊNE</li>
-                        </ul>
-                        <ul class=\"list-elements col-6\">
-                            <li class=\"p-liste\">PANNEAUX BRISE-VUE</li>
-                            <li class=\"p-liste\">QUINCAILLERIES</li>
-                            <li class=\"p-liste\">ENTRETIEN DU BOIS</li>
-                            <li class=\"p-liste\">PRODUITS DERIVÉS</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </section>
+    {% include('_partials/produits.html.twig') %}  
     <!-- P I C T U R E - P R O D U I T S -->
 
 

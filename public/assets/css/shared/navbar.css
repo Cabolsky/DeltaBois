@@ -5,10 +5,12 @@
     color: var(--color-two); 
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 8vw;
     letter-spacing: 1px;
     text-decoration: none; 
+    text-align: center;
     margin-right: 3vw;
+    margin: 5vw;
 }
 #navbar .navbar .nav-link:hover {
     letter-spacing: 2px;
@@ -21,4 +23,31 @@
 }
 #navbar .navbar .navbar-brand{
     color: var(--color-one);
+}
+@media (min-width: 768px) {
+    #navbar .navbar{
+        background-color: #8A8A14;
+        height: 60px;
+    }
+    #navbar .navbar .nav-link {
+        color: var(--color-two); 
+        font-family: "Darker Grotesque", sans-serif;
+        font-weight: 600;
+        font-size: 1vw;
+        letter-spacing: 1px;
+        text-decoration: none; 
+        margin-right: 1vw;
+    }
+    #navbar .navbar .nav-link:hover {
+        letter-spacing: 2px;
+        transition: 1s;
+        color: var(--color-one);
+    }
+    #navbar .navbar .nav-link.active {
+        color: var(--color-one); 
+        font-weight: 900;
+    }
+    #navbar .navbar .navbar-brand{
+        color: var(--color-one);
+    }
 }
