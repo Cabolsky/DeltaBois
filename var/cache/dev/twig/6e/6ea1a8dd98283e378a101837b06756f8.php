@@ -45,40 +45,46 @@ class __TwigTemplate_4fdd41b6e58aeaf16e5bc4dfec87f710 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/navbar.html.twig"));
 
         // line 1
-        yield "    <!-- N A V B A R -->
-    <section id=\"navbar\">
-        <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
-            <div class=\"container-fluid\">
-                <a class=\"navbar-brand\" href=\"#\">   
-                </a>
-                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"navbar-toggler-icon\"></span>
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"";
-        // line 13
+        yield "<!-- N A V B A R -->
+<section id=\"navbar\">
+    <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
+        <div class=\"container-fluid\">
+            <a class=\"navbar-brand\" href=\"#\"></a>
+            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+                <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link active\" aria-current=\"page\" href=\"";
+        // line 12
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         yield "\">ACCUEIL</a>
-                        </li>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"";
-        // line 16
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"";
+        // line 15
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_produits");
         yield "\">NOS PRODUITS</a>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"";
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"";
         // line 18
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         yield "\">CONTACT</a>
-                        </li>
-                    </ul>
+                    </li>
+                </ul>
+                <div class=\"containt-flag\">
+                    <div class=\"bg-blue\"></div>
+                    <div class=\"bg-white\"></div>
+                    <div class=\"bg-red\"></div>
                 </div>
             </div>
-        </nav>
-    </section>
-    <!-- N A V B A R -->";
+        </div>
+    </nav>
+</section>
+<!-- N A V B A R -->
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -109,35 +115,41 @@ class __TwigTemplate_4fdd41b6e58aeaf16e5bc4dfec87f710 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  73 => 18,  68 => 16,  62 => 13,  48 => 1,);
+        return array (  73 => 18,  67 => 15,  61 => 12,  48 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("    <!-- N A V B A R -->
-    <section id=\"navbar\">
-        <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
-            <div class=\"container-fluid\">
-                <a class=\"navbar-brand\" href=\"#\">   
-                </a>
-                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"navbar-toggler-icon\"></span>
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
-                    <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_index') }}\">ACCUEIL</a>
-                        </li>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_produits') }}\">NOS PRODUITS</a>
-                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_contact') }}\">CONTACT</a>
-                        </li>
-                    </ul>
+        return new Source("<!-- N A V B A R -->
+<section id=\"navbar\">
+    <nav class=\"navbar navbar-expand-md navbar-light bg-white\">
+        <div class=\"container-fluid\">
+            <a class=\"navbar-brand\" href=\"#\"></a>
+            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+                <ul class=\"navbar-nav ms-auto mt-5 mt-md-0\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link active\" aria-current=\"page\" href=\"{{ path('app_index') }}\">ACCUEIL</a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"{{ path('app_produits') }}\">NOS PRODUITS</a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"{{ path('app_contact') }}\">CONTACT</a>
+                    </li>
+                </ul>
+                <div class=\"containt-flag\">
+                    <div class=\"bg-blue\"></div>
+                    <div class=\"bg-white\"></div>
+                    <div class=\"bg-red\"></div>
                 </div>
             </div>
-        </nav>
-    </section>
-    <!-- N A V B A R -->", "_partials/navbar.html.twig", "C:\\laragon\\www\\DeltaBois\\templates\\_partials\\navbar.html.twig");
+        </div>
+    </nav>
+</section>
+<!-- N A V B A R -->
+", "_partials/navbar.html.twig", "C:\\laragon\\www\\DeltaBois\\templates\\_partials\\navbar.html.twig");
     }
 }

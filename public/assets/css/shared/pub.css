@@ -1,0 +1,56 @@
+#scrolling-banner {
+    width: 100vw;
+    height: 10vw; 
+    background-color: #ff0000;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    position: fixed; 
+    top: 15vw; 
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    z-index: 999;
+    padding: 0; 
+    letter-spacing: 0.1vw;
+}
+#scrolling-banner p {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-text 20s linear infinite;
+    will-change: transform;
+}
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media (min-width: 768px) {
+    #scrolling-banner {
+        width: 100vw;
+        height: 2.5vw;
+        background-color: #ff0000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: fixed; 
+        top: 3vw;
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 1vw;
+        font-weight: 600;
+        z-index: 999; 
+    }
+    #scrolling-banner p {
+        white-space: nowrap;
+        display: inline-block;
+        animation: scroll-text 20s linear infinite;
+        will-change: transform;
+    }
+}
