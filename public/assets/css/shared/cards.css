@@ -33,7 +33,7 @@
     font-size: 5vw;
 }
 #cards .card-button {
-    border: 1px solid #aa8a6f;
+    border: 1px solid var(--color-two);
     overflow: hidden;
     width: 30vw;
     height: 10vw;
@@ -55,7 +55,7 @@
 #cards .icon-bg {
     height: 4.5vw;
     width: 4.5vw;
-    background-color: #8A8A14;
+    background-color: var(--color-one);
     color: #ffffff;
 }
 #cards .fa-solid {
@@ -87,7 +87,7 @@
     }
     #cards .card-button:hover {
         background-color: #ffffff;
-        border: 2px solid #aa8a6f;
+        border: 2px solid var(--color-two);
     }
     #cards .icon-bg {
         position: relative;

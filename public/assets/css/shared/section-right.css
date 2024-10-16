@@ -37,7 +37,7 @@
     align-items: center;
     gap: 1vw;
     font-family: 'Bebas Neue', sans-serif;
-    color: #775A42;
+    color: var(--color-two);
     font-size: 4vw;
     letter-spacing: 0.2vw;
     padding-left: 5vw;
@@ -47,7 +47,7 @@
     content: "";
     width: 2.5vw;
     height: 2.5vw;
-    background-color: #8A8A14;
+    background-color: var(--color-one);
     border-radius: 50%;
 }
 @media (min-width: 768px) {
@@ -81,7 +81,7 @@
         align-items: center;
         gap: 1vw;
         font-family: 'Bebas Neue', sans-serif;
-        color: #775A42;
+        color: var(--color-two);
         font-size: 1.2vw;
         letter-spacing: 0.2vw;
         padding-left: 0vw;

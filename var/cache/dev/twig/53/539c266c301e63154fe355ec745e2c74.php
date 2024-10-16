@@ -84,8 +84,11 @@ class __TwigTemplate_5f185751839422ba25658b08f3c113d5 extends Template
         // line 19
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         // line 20
-        yield "        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>
-
+        yield "        <script src=\"";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/JS/effect.js"), "html", null, true);
+        yield "\"></script>
+        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>
+        
     </body>
 </html>
 ";
@@ -212,7 +215,7 @@ class __TwigTemplate_5f185751839422ba25658b08f3c113d5 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  173 => 19,  162 => 16,  149 => 15,  138 => 13,  125 => 12,  102 => 6,  87 => 20,  85 => 19,  81 => 17,  79 => 15,  76 => 14,  74 => 12,  70 => 11,  64 => 8,  59 => 6,  52 => 1,);
+        return array (  176 => 19,  165 => 16,  152 => 15,  141 => 13,  128 => 12,  105 => 6,  87 => 20,  85 => 19,  81 => 17,  79 => 15,  76 => 14,  74 => 12,  70 => 11,  64 => 8,  59 => 6,  52 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -236,8 +239,9 @@ class __TwigTemplate_5f185751839422ba25658b08f3c113d5 extends Template
     </head>
     <body>
         {% block body %}{% endblock %}
+        <script src=\"{{ asset('assets/JS/effect.js') }}\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>
-
+        
     </body>
 </html>
 ", "base.html.twig", "C:\\laragon\\www\\DeltaBois\\templates\\base.html.twig");

@@ -11,6 +11,7 @@
 @import'shared/section-left.css';
 @import'shared/section-right.css';
 @import'shared/section-produits.css';
+@import'shared/color.css';
 
 
 body {
@@ -21,22 +22,22 @@ body {
 }
 .title-comment{
     font-family: 'Bebas Neue', sans-serif;
-    color: #775A42;
+    color: var(--color-two);
     font-size: 5vw;
 }
 .p-comment{
     font-family: 'Darker Grotesque';
-    color: #775A42;
+    color: var(--color-two);
     font-size: 3vw;
 }
 .title-text{
     font-family: 'Bebas Neue', sans-serif;
-    color: #775A42;
+    color: var(--color-two);
     font-size: 5vw;
 }
 .p-text{
     font-family: 'Darker Grotesque';
-    color: #775A42;
+    color: var(--color-two);
     font-size: 3vw;
 }
 @media (min-width: 768px) {

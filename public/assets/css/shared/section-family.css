@@ -19,16 +19,16 @@
 }
 #section-family .p-name {
     font-family: 'Bebas Neue', sans-serif;
-    color: #775A42;
+    color: var(--color-two);
     font-size: 4vw;
 }
 #section-family .p-grade {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 3vw;
-    color: #775A42;
+    color: var(--color-two);
 }
 #section-family .color-name {
-    color: #8A8A14;
+    color: var(--color-one);
 }
 @media (min-width: 768px) {
     #section-family .container-family {
