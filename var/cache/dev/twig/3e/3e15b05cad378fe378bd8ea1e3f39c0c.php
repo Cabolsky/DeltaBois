@@ -105,21 +105,29 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <!-- N A V B A R -->
 
 
+    <!-- P U B -->
+    ";
+        // line 10
+        yield from         $this->loadTemplate("_partials/pub.html.twig", "contact/index.html.twig", 10)->unwrap()->yield($context);
+        yield " 
+    <!-- P U B -->
+
+
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 13
+        // line 18
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 14
+        // line 19
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"";
-        // line 16
+        // line 21
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
         yield "\" alt=\"Logo Flou\">
         </div>
@@ -129,8 +137,8 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 23
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 23)->unwrap()->yield($context);
+        // line 28
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 28)->unwrap()->yield($context);
         yield "  
     <!-- C O M M E N T - H E A D E R -->
 
@@ -140,11 +148,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-md-4\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 31
+        // line 36
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 32
+        // line 37
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -157,7 +165,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"section-left\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5  mt-md-5\">
             <img src=\"";
-        // line 42
+        // line 47
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-7.jpg"), "html", null, true);
         yield "\" alt=\"Photo du Chateau Lucas II\" class=\"picture-left img-fluid col-md-6 order-md-1 order-1\">
             <div class=\"containt-text col-md-6 order-md-2 order-2\">
@@ -187,7 +195,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"localisation\">
         <div class=\"col-10 mx-auto mt-5\">
             <img class=\"img-fluid\" src=\"";
-        // line 69
+        // line 74
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/localisation.png"), "html", null, true);
         yield "\" alt=\"Header Image\">
         </div>
@@ -200,7 +208,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"container-family col-md-8 mx-auto mt-4 mt-md-5\">
             <div class=\"presentation\">
                 <img src=\"";
-        // line 79
+        // line 84
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-5.jpg"), "html", null, true);
         yield "\" alt=\"Hugo CAZADIEU\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -228,7 +236,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 104
+        // line 109
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-4.jpg"), "html", null, true);
         yield "\" alt=\"Person 2\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -250,7 +258,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 123
+        // line 128
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-6.jpg"), "html", null, true);
         yield "\" alt=\"Person 3\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -282,7 +290,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"section-right\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
             <img src=\"";
-        // line 152
+        // line 157
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-3.jpg"), "html", null, true);
         yield "\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
             <div class=\"containt-text col-md-6 order-md-1 order-2\">
@@ -310,11 +318,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 177
+        // line 182
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 178
+        // line 183
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -325,8 +333,8 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 186
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 186)->unwrap()->yield($context);
+        // line 191
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 191)->unwrap()->yield($context);
         yield "  
     <!-- C O M M E N T - H E A D E R -->
     
@@ -336,11 +344,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-3 mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 194
+        // line 199
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 195
+        // line 200
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -409,7 +417,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  344 => 195,  340 => 194,  329 => 186,  318 => 178,  314 => 177,  286 => 152,  254 => 123,  232 => 104,  204 => 79,  191 => 69,  161 => 42,  148 => 32,  144 => 31,  133 => 23,  123 => 16,  118 => 14,  114 => 13,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  352 => 200,  348 => 199,  337 => 191,  326 => 183,  322 => 182,  294 => 157,  262 => 128,  240 => 109,  212 => 84,  199 => 74,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -420,6 +428,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <!-- N A V B A R -->
     {% include('_partials/navbar.html.twig') %} 
     <!-- N A V B A R -->
+
+
+    <!-- P U B -->
+    {% include('_partials/pub.html.twig') %} 
+    <!-- P U B -->
 
 
     <!-- P I C T U R E - H E A D E R -->

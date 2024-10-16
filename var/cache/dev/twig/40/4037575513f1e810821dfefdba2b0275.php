@@ -104,10 +104,11 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         yield " 
     <!-- N A V B A R -->
 
+
     <!-- P U B -->
     ";
-        // line 9
-        yield from         $this->loadTemplate("_partials/pub.html.twig", "index/index.html.twig", 9)->unwrap()->yield($context);
+        // line 10
+        yield from         $this->loadTemplate("_partials/pub.html.twig", "index/index.html.twig", 10)->unwrap()->yield($context);
         yield " 
     <!-- P U B -->
 
@@ -117,22 +118,21 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 17
+        // line 18
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 18
+        // line 19
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"";
-        // line 20
+        // line 21
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
         yield "\" alt=\"Logo Flou\">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
-
 
 
     <!-- C O M M E N T - H E A D E R -->
@@ -456,7 +456,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  391 => 233,  387 => 232,  376 => 224,  365 => 216,  361 => 215,  332 => 189,  322 => 182,  310 => 173,  279 => 145,  247 => 116,  225 => 97,  197 => 72,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  130 => 20,  125 => 18,  121 => 17,  110 => 9,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  391 => 233,  387 => 232,  376 => 224,  365 => 216,  361 => 215,  332 => 189,  322 => 182,  310 => 173,  279 => 145,  247 => 116,  225 => 97,  197 => 72,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -467,6 +467,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
     <!-- N A V B A R -->
     {% include('_partials/navbar.html.twig') %} 
     <!-- N A V B A R -->
+
 
     <!-- P U B -->
     {% include('_partials/pub.html.twig') %} 
@@ -484,7 +485,6 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
-
 
 
     <!-- C O M M E N T - H E A D E R -->
