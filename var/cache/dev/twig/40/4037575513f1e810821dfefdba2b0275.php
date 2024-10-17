@@ -115,7 +115,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-md-4 mt-0\">
+        <div class=\"header-container mt-md-5 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 18
@@ -480,7 +480,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-md-4 mt-0\">
+        <div class=\"header-container mt-md-5 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-1.jpg') }}\">
                 <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">

@@ -115,7 +115,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-md-4 mt-0\">
+        <div class=\"header-container mt-md-5 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
         // line 18
@@ -194,13 +194,16 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <!-- P I C T U R E - R U L E -->
     <section id=\"localisation\">
         <div class=\"col-10 mx-auto mt-5\">
-            <img class=\"img-fluid\" src=\"";
-        // line 74
+            <a href=\"https://www.google.fr/maps/place/SARL+DELTABOIS/@43.746488,-1.3350736,15.75z/data=!4m6!3m5!1s0xd5157aa489d4281:0x7c30fbf3d705fdf0!8m2!3d43.7465443!4d-1.3314309!16s%2Fg%2F1tczlt31?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">
+                <img class=\"img-fluid\" src=\"";
+        // line 75
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/localisation.png"), "html", null, true);
-        yield "\" alt=\"Header Image\">
+        yield "\" alt=\"Localisation Image\">
+            </a>
         </div>
     </section>
     <!-- P I C T U R E - R U L E -->
+
 
 
     <!-- P R E S E N T A T I O N -->
@@ -208,7 +211,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"container-family col-md-8 mx-auto mt-4 mt-md-5\">
             <div class=\"presentation\">
                 <img src=\"";
-        // line 84
+        // line 87
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-5.jpg"), "html", null, true);
         yield "\" alt=\"Hugo CAZADIEU\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -236,7 +239,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 109
+        // line 112
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-4.jpg"), "html", null, true);
         yield "\" alt=\"Person 2\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -258,7 +261,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
             </div>
             <div class=\"presentation\">
                 <img src=\"";
-        // line 128
+        // line 131
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-6.jpg"), "html", null, true);
         yield "\" alt=\"Person 3\" class=\"round-image\">
                 <p class=\"p-name my-2 mt-md-3\">
@@ -290,7 +293,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <section id=\"section-right\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
             <img src=\"";
-        // line 157
+        // line 160
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-3.jpg"), "html", null, true);
         yield "\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
             <div class=\"containt-text col-md-6 order-md-1 order-2\">
@@ -318,11 +321,11 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 182
+        // line 185
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 183
+        // line 186
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -333,8 +336,8 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 191
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 191)->unwrap()->yield($context);
+        // line 194
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 194)->unwrap()->yield($context);
         yield "  
     <!-- C O M M E N T - H E A D E R -->
     
@@ -344,16 +347,16 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 199
+        // line 202
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 200
+        // line 203
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"";
-        // line 202
+        // line 205
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
         yield "\" alt=\"Logo Flou\">
         </div>
@@ -421,7 +424,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  357 => 202,  352 => 200,  348 => 199,  337 => 191,  326 => 183,  322 => 182,  294 => 157,  262 => 128,  240 => 109,  212 => 84,  199 => 74,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  360 => 205,  355 => 203,  351 => 202,  340 => 194,  329 => 186,  325 => 185,  297 => 160,  265 => 131,  243 => 112,  215 => 87,  200 => 75,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -441,7 +444,7 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
 
     <!-- P I C T U R E - H E A D E R -->
     <section id=\"picture-header\">
-        <div class=\"header-container mt-md-4 mt-0\">
+        <div class=\"header-container mt-md-5 mt-0\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/picture-header-contact.jpg') }}\">
                 <img class=\"header-image\" src=\"{{ asset('assets/images/picture-1-phone.jpg') }}\" alt=\"Header Image\">
@@ -499,10 +502,13 @@ class __TwigTemplate_b3c242ed50d34049c2a724719d769b9b extends Template
     <!-- P I C T U R E - R U L E -->
     <section id=\"localisation\">
         <div class=\"col-10 mx-auto mt-5\">
-            <img class=\"img-fluid\" src=\"{{ asset('assets/images/localisation.png') }}\" alt=\"Header Image\">
+            <a href=\"https://www.google.fr/maps/place/SARL+DELTABOIS/@43.746488,-1.3350736,15.75z/data=!4m6!3m5!1s0xd5157aa489d4281:0x7c30fbf3d705fdf0!8m2!3d43.7465443!4d-1.3314309!16s%2Fg%2F1tczlt31?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">
+                <img class=\"img-fluid\" src=\"{{ asset('assets/images/localisation.png') }}\" alt=\"Localisation Image\">
+            </a>
         </div>
     </section>
     <!-- P I C T U R E - R U L E -->
+
 
 
     <!-- P R E S E N T A T I O N -->

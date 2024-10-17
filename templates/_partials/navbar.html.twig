@@ -1,15 +1,17 @@
 <!-- N A V B A R -->
 <section id="navbar">
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="{{ path('app_index') }}">
+                <img src="{{ asset('assets/images/logo.png') }}" class="logo-nav" alt="Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mt-5 mt-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ path('app_index') }}">ACCUEIL</a>
+                        <a class="nav-link" aria-current="page" href="{{ path('app_index') }}">ACCUEIL</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('app_produits') }}">NOS PRODUITS</a>
@@ -28,3 +30,4 @@
     </nav>
 </section>
 <!-- N A V B A R -->
+
