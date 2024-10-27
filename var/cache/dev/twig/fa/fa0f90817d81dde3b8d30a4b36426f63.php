@@ -252,7 +252,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-star\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM</h1>
+                    <h1 class=\"title-text\">AVANT</h1>
                 </div>
             </div>
             <div class=\"col-md-6 text-center mt-3 mt-md-0\">
@@ -264,7 +264,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-star\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM</h1>
+                    <h1 class=\"title-text\">APRÉS</h1>
                 </div>
             </div>
         </div>
@@ -501,7 +501,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-star\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM</h1>
+                    <h1 class=\"title-text\">AVANT</h1>
                 </div>
             </div>
             <div class=\"col-md-6 text-center mt-3 mt-md-0\">
@@ -510,7 +510,7 @@ class __TwigTemplate_ee16bcfdab7b30c64b9b6255019ab2e9 extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-star\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM</h1>
+                    <h1 class=\"title-text\">APRÉS</h1>
                 </div>
             </div>
         </div>

@@ -36,6 +36,6 @@
     }
     #picture-header .header-container:hover .logo-flou {
         transform: translate(-50%, -50%) scale(2);
-        transition: transform 2s ease-out;
+        transition: transform 3.5s ease-out;
     }
 }

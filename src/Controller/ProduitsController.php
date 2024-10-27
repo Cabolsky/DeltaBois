@@ -4,15 +4,15 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ProduitsController extends AbstractController
 {
     #[Route('/produits', name: 'app_produits')]
-    public function index(): Response
+    public function produits(): Response
     {
         return $this->render('produits/index.html.twig', [
-            'controller_name' => 'ProduitsController',
+            // Vous pouvez ajouter des données à passer à votre template ici
         ]);
     }
 }

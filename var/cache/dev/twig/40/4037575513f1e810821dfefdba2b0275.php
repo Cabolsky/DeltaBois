@@ -309,7 +309,10 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         // line 173
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
-                <img class=\"header-image\" src=\"/pictures/wood-1-phone.jpg\" alt=\"Header Image\">
+                <img class=\"header-image\" src=\"";
+        // line 174
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
+        yield "\" alt=\"Header Image\">
             </picture>
         </div>
     </section>
@@ -460,7 +463,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  396 => 235,  391 => 233,  387 => 232,  376 => 224,  365 => 216,  361 => 215,  332 => 189,  322 => 182,  310 => 173,  279 => 145,  247 => 116,  225 => 97,  197 => 72,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  399 => 235,  394 => 233,  390 => 232,  379 => 224,  368 => 216,  364 => 215,  335 => 189,  325 => 182,  314 => 174,  310 => 173,  279 => 145,  247 => 116,  225 => 97,  197 => 72,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -638,7 +641,7 @@ class __TwigTemplate_ddf55b90d65c4cac78fe2708d32bea44 extends Template
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"{{ asset('assets/images/wood-1.jpg') }}\">
-                <img class=\"header-image\" src=\"/pictures/wood-1-phone.jpg\" alt=\"Header Image\">
+                <img class=\"header-image\" src=\"{{ asset('assets/images/wood-1-phone.jpg') }}\" alt=\"Header Image\">
             </picture>
         </div>
     </section>
