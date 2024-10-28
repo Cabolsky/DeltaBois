@@ -1,7 +1,7 @@
 #scrolling-banner {
     width: 100vw;
     height: 10vw; 
-    background-color: #8A8A14;
+
     color: #fff;
     display: flex;
     align-items: center; 
@@ -34,7 +34,7 @@
     #scrolling-banner {
         width: 100vw;
         height: 2.5vw;
-        background-color: #8A8A14;
+
         color: #fff;
         display: flex;
         align-items: center;

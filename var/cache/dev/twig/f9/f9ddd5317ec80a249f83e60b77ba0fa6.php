@@ -173,12 +173,15 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-people-group\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">";
+        // line 53
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article2"]) || array_key_exists("article2", $context) ? $context["article2"] : (function () { throw new RuntimeError('Variable "article2" does not exist.', 53, $this->source); })()), "title", [], "any", false, false, false, 53), "html", null, true);
+        yield "</h1>
                 </div>
-                <p class=\"p-text col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor.</p>
+                <p class=\"p-text col-md-10 mx-auto\">";
+        // line 55
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article2"]) || array_key_exists("article2", $context) ? $context["article2"] : (function () { throw new RuntimeError('Variable "article2" does not exist.', 55, $this->source); })()), "text", [], "any", false, false, false, 55), "html", null, true);
+        yield "</p>
                 <ul class=\"list-elements col-12\">
                     <li class=\"p-liste\">4 Rue d’Aquitaine ZA de Cramat</li>
                     <li class=\"p-liste\">40140 Soustons</li>
@@ -196,7 +199,7 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
         <div class=\"col-10 mx-auto mt-5\">
             <a href=\"https://www.google.fr/maps/place/SARL+DELTABOIS/@43.746488,-1.3350736,15.75z/data=!4m6!3m5!1s0xd5157aa489d4281:0x7c30fbf3d705fdf0!8m2!3d43.7465443!4d-1.3314309!16s%2Fg%2F1tczlt31?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">
                 <img class=\"img-fluid\" src=\"";
-        // line 75
+        // line 72
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/localisation.png"), "html", null, true);
         yield "\" alt=\"Localisation Image\">
             </a>
@@ -205,127 +208,16 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
     <!-- P I C T U R E - R U L E -->
 
 
-
-    <!-- P R E S E N T A T I O N -->
-    <section id=\"section-family\">
-        <div class=\"container-family col-md-8 mx-auto mt-4 mt-md-5\">
-            <div class=\"presentation\">
-                <img src=\"";
-        // line 87
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-5.jpg"), "html", null, true);
-        yield "\" alt=\"Hugo CAZADIEU\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>J</span>
-                    <span>E</span>
-                    <span>A</span>
-                    <span>N</span>
-                    <span>-</span>
-                    <span>P</span>
-                    <span>I</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>E</span>
-                    <span> </span>
-                    <span class=\"color-name\">C</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">Z</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">D</span>
-                    <span class=\"color-name\">I</span>
-                    <span class=\"color-name\">E</span>
-                    <span class=\"color-name\">U</span>
-                </p>
-                <p class=\"p-grade my-0\">PATRON</p>
-            </div>
-            <div class=\"presentation\">
-                <img src=\"";
-        // line 112
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-4.jpg"), "html", null, true);
-        yield "\" alt=\"Person 2\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>H</span>
-                    <span>U</span>
-                    <span>G</span>
-                    <span>O</span>
-                    <span> </span>
-                    <span class=\"color-name\">C</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">Z</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">D</span>
-                    <span class=\"color-name\">I</span>
-                    <span class=\"color-name\">E</span>
-                    <span class=\"color-name\">U</span>
-                </p>
-                <p class=\"p-grade my-0\">DIRECTEUR</p>
-            </div>
-            <div class=\"presentation\">
-                <img src=\"";
-        // line 131
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-6.jpg"), "html", null, true);
-        yield "\" alt=\"Person 3\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>C</span>
-                    <span>H</span>
-                    <span>R</span>
-                    <span>I</span>
-                    <span>S</span>
-                    <span>T</span>
-                    <span>O</span>
-                    <span>P</span>
-                    <span>H</span>
-                    <span>E</span>
-                    <span> </span>
-                    <span class=\"color-name\">S</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">J</span>
-                    <span class=\"color-name\">U</span>
-                    <span class=\"color-name\">S</span>
-                </p>
-                <p class=\"p-grade my-0\">CHAUFFEUR</p>
-            </div>
-        </div>
-    </section>
-    <!-- P R E S E N T A T I O N -->
-    
-
-    <!-- P I C T U R E - R I G H T -->
-    <section id=\"section-right\">
-        <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
-            <img src=\"";
-        // line 160
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-3.jpg"), "html", null, true);
-        yield "\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
-            <div class=\"containt-text col-md-6 order-md-1 order-2\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- P I C T U R E - R I G H T -->
-
-
     <!-- P I C T U R E - R U L E -->
     <section id=\"picture-rule\">
         <div class=\"header-container mt-md-5\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 185
+        // line 83
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 186
+        // line 84
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -336,8 +228,8 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 194
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 194)->unwrap()->yield($context);
+        // line 92
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "contact/index.html.twig", 92)->unwrap()->yield($context);
         yield "  
     <!-- C O M M E N T - H E A D E R -->
     
@@ -347,16 +239,16 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 202
+        // line 100
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-header-contact.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 203
+        // line 101
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"";
-        // line 205
+        // line 103
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
         yield "\" alt=\"Logo Flou\">
         </div>
@@ -424,7 +316,7 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  360 => 205,  355 => 203,  351 => 202,  340 => 194,  329 => 186,  325 => 185,  297 => 160,  265 => 131,  243 => 112,  215 => 87,  200 => 75,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  252 => 103,  247 => 101,  243 => 100,  232 => 92,  221 => 84,  217 => 83,  203 => 72,  183 => 55,  178 => 53,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -481,12 +373,9 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-people-group\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">{{ article2.title }}</h1>
                 </div>
-                <p class=\"p-text col-md-10 mx-auto\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor.</p>
+                <p class=\"p-text col-md-10 mx-auto\">{{ article2.text }}</p>
                 <ul class=\"list-elements col-12\">
                     <li class=\"p-liste\">4 Rue d’Aquitaine ZA de Cramat</li>
                     <li class=\"p-liste\">40140 Soustons</li>
@@ -508,105 +397,6 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
         </div>
     </section>
     <!-- P I C T U R E - R U L E -->
-
-
-
-    <!-- P R E S E N T A T I O N -->
-    <section id=\"section-family\">
-        <div class=\"container-family col-md-8 mx-auto mt-4 mt-md-5\">
-            <div class=\"presentation\">
-                <img src=\"{{ asset('assets/images/picture-5.jpg') }}\" alt=\"Hugo CAZADIEU\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>J</span>
-                    <span>E</span>
-                    <span>A</span>
-                    <span>N</span>
-                    <span>-</span>
-                    <span>P</span>
-                    <span>I</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>E</span>
-                    <span> </span>
-                    <span class=\"color-name\">C</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">Z</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">D</span>
-                    <span class=\"color-name\">I</span>
-                    <span class=\"color-name\">E</span>
-                    <span class=\"color-name\">U</span>
-                </p>
-                <p class=\"p-grade my-0\">PATRON</p>
-            </div>
-            <div class=\"presentation\">
-                <img src=\"{{ asset('assets/images/picture-4.jpg') }}\" alt=\"Person 2\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>H</span>
-                    <span>U</span>
-                    <span>G</span>
-                    <span>O</span>
-                    <span> </span>
-                    <span class=\"color-name\">C</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">Z</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">D</span>
-                    <span class=\"color-name\">I</span>
-                    <span class=\"color-name\">E</span>
-                    <span class=\"color-name\">U</span>
-                </p>
-                <p class=\"p-grade my-0\">DIRECTEUR</p>
-            </div>
-            <div class=\"presentation\">
-                <img src=\"{{ asset('assets/images/picture-6.jpg') }}\" alt=\"Person 3\" class=\"round-image\">
-                <p class=\"p-name my-2 mt-md-3\">
-                    <span>C</span>
-                    <span>H</span>
-                    <span>R</span>
-                    <span>I</span>
-                    <span>S</span>
-                    <span>T</span>
-                    <span>O</span>
-                    <span>P</span>
-                    <span>H</span>
-                    <span>E</span>
-                    <span> </span>
-                    <span class=\"color-name\">S</span>
-                    <span class=\"color-name\">A</span>
-                    <span class=\"color-name\">J</span>
-                    <span class=\"color-name\">U</span>
-                    <span class=\"color-name\">S</span>
-                </p>
-                <p class=\"p-grade my-0\">CHAUFFEUR</p>
-            </div>
-        </div>
-    </section>
-    <!-- P R E S E N T A T I O N -->
-    
-
-    <!-- P I C T U R E - R I G H T -->
-    <section id=\"section-right\">
-        <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
-            <img src=\"{{ asset('assets/images/picture-3.jpg') }}\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
-            <div class=\"containt-text col-md-6 order-md-1 order-2\">
-                <div class=\"containt-title\">
-                    <div class=\"icon-bg\">
-                        <i class=\"fa-solid fa-people-group\"></i>
-                    </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
-                </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- P I C T U R E - R I G H T -->
 
 
     <!-- P I C T U R E - R U L E -->

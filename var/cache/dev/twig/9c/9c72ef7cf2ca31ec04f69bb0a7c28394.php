@@ -45,9 +45,15 @@ class __TwigTemplate_6a27e2349c3d743548f4cd345d4bde0d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/pub.html.twig"));
 
         // line 1
-        yield "    <div id=\"scrolling-banner\">
-        <p class=\"p-pub mt-md-3\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-    </div>";
+        yield "<div id=\"scrolling-banner\" style=\"background-color: ";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["pub"]) || array_key_exists("pub", $context) ? $context["pub"] : (function () { throw new RuntimeError('Variable "pub" does not exist.', 1, $this->source); })()), "color", [], "any", false, false, false, 1), "code", [], "any", false, false, false, 1), "html", null, true);
+        yield "\">
+    <p class=\"p-pub mt-md-3\">";
+        // line 2
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["pub"]) || array_key_exists("pub", $context) ? $context["pub"] : (function () { throw new RuntimeError('Variable "pub" does not exist.', 2, $this->source); })()), "text", [], "any", false, false, false, 2), "html", null, true);
+        yield "</p>
+</div>
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -68,15 +74,24 @@ class __TwigTemplate_6a27e2349c3d743548f4cd345d4bde0d extends Template
     /**
      * @codeCoverageIgnore
      */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
     public function getDebugInfo(): array
     {
-        return array (  48 => 1,);
+        return array (  53 => 2,  48 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("    <div id=\"scrolling-banner\">
-        <p class=\"p-pub mt-md-3\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-    </div>", "_partials/pub.html.twig", "C:\\laragon\\www\\DeltaBois\\templates\\_partials\\pub.html.twig");
+        return new Source("<div id=\"scrolling-banner\" style=\"background-color: {{ pub.color.code }}\">
+    <p class=\"p-pub mt-md-3\">{{ pub.text }}</p>
+</div>
+", "_partials/pub.html.twig", "C:\\laragon\\www\\DeltaBois\\templates\\_partials\\pub.html.twig");
     }
 }

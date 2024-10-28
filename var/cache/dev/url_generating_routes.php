@@ -19,8 +19,8 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_index' => [[], ['_controller' => 'App\\Controller\\IndexController::index'], [], [['text', '/']], [], [], []],
-    'app_produits' => [[], ['_controller' => 'App\\Controller\\ProduitsController::produits'], [], [['text', '/produits']], [], [], []],
+    'app_produits' => [[], ['_controller' => 'App\\Controller\\ProduitsController::index'], [], [['text', '/produits']], [], [], []],
     'App\Controller\ContactController::index' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'App\Controller\IndexController::index' => [[], ['_controller' => 'App\\Controller\\IndexController::index'], [], [['text', '/']], [], [], []],
-    'App\Controller\ProduitsController::produits' => [[], ['_controller' => 'App\\Controller\\ProduitsController::produits'], [], [['text', '/produits']], [], [], []],
+    'App\Controller\ProduitsController::index' => [[], ['_controller' => 'App\\Controller\\ProduitsController::index'], [], [['text', '/produits']], [], [], []],
 ];

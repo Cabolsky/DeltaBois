@@ -1,7 +1,5 @@
 <?php
 
-// src/Entity/Article.php
-
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
@@ -24,11 +22,6 @@ class Article
 
     #[ORM\Column(length: 255)]
     private ?string $picture = null;
-
-    // Ajout de la relation ManyToOne
-    #[ORM\ManyToOne(inversedBy: 'articles')]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Page $page = null;
 
     public function getId(): ?int
     {
@@ -67,19 +60,6 @@ class Article
     public function setPicture(string $picture): static
     {
         $this->picture = $picture;
-
-        return $this;
-    }
-
-    // Getter et Setter pour la relation avec Page
-    public function getPage(): ?Page
-    {
-        return $this->page;
-    }
-
-    public function setPage(?Page $page): static
-    {
-        $this->page = $page;
 
         return $this;
     }

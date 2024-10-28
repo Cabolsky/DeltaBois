@@ -173,15 +173,15 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-tree\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">";
+        // line 53
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article5"]) || array_key_exists("article5", $context) ? $context["article5"] : (function () { throw new RuntimeError('Variable "article5" does not exist.', 53, $this->source); })()), "title", [], "any", false, false, false, 53), "html", null, true);
+        yield "</h1>
                 </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p class=\"p-text col-md-10\">";
+        // line 55
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article5"]) || array_key_exists("article5", $context) ? $context["article5"] : (function () { throw new RuntimeError('Variable "article5" does not exist.', 55, $this->source); })()), "text", [], "any", false, false, false, 55), "html", null, true);
+        yield "</p>
             </div>
         </div>
     </section>
@@ -190,8 +190,8 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
 
     <!-- C A R D S - P R O D U I T S -->
    ";
-        // line 69
-        yield from         $this->loadTemplate("_partials/cards.html.twig", "produits/index.html.twig", 69)->unwrap()->yield($context);
+        // line 63
+        yield from         $this->loadTemplate("_partials/cards.html.twig", "produits/index.html.twig", 63)->unwrap()->yield($context);
         yield " 
     <!-- C A R D S - P R O D U I T S -->
 
@@ -200,11 +200,11 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
         <div class=\"header-container mt-md-4\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 76
+        // line 70
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 77
+        // line 71
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -217,7 +217,7 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
     <section id=\"section-right\">
         <div class=\"container-fluid row col-md-10 mx-auto mt-5 mt-md-5\">
             <img src=\"";
-        // line 87
+        // line 81
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-9.jpg"), "html", null, true);
         yield "\" alt=\"\" class=\"picture-right img-fluid col-md-6 order-md-2 order-1\">
             <div class=\"containt-text col-md-6 order-md-1 order-2\">
@@ -225,14 +225,15 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-tree\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">";
+        // line 87
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article6"]) || array_key_exists("article6", $context) ? $context["article6"] : (function () { throw new RuntimeError('Variable "article6" does not exist.', 87, $this->source); })()), "title", [], "any", false, false, false, 87), "html", null, true);
+        yield "</h1>
                 </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class=\"p-text col-md-10\">";
+        // line 89
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article6"]) || array_key_exists("article6", $context) ? $context["article6"] : (function () { throw new RuntimeError('Variable "article6" does not exist.', 89, $this->source); })()), "text", [], "any", false, false, false, 89), "html", null, true);
+        yield "
                 </p>
             </div>
         </div>
@@ -245,7 +246,7 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
         <div class=\"container-fluid row col-md-10 mx-auto mt-md-5 mt-1\">
             <div class=\"col-md-6 text-center\">
                 <img src=\"";
-        // line 112
+        // line 101
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-10.jpg"), "html", null, true);
         yield "\" alt=\"Avant\" class=\"img-fluid\">
                 <div class=\"containt-title mt-md-2 mt-3\">
@@ -257,7 +258,7 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
             </div>
             <div class=\"col-md-6 text-center mt-3 mt-md-0\">
                 <img src=\"";
-        // line 121
+        // line 110
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-11.jpg"), "html", null, true);
         yield "\" alt=\"Après\" class=\"img-fluid\">
                 <div class=\"containt-title mt-md-2 mt-3\">
@@ -277,11 +278,11 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
         <div class=\"header-container mt-md-4\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 138
+        // line 127
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 139
+        // line 128
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/wood-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
@@ -292,8 +293,8 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
 
     <!-- C O M M E N T - H E A D E R -->
     ";
-        // line 147
-        yield from         $this->loadTemplate("_partials/comment.html.twig", "produits/index.html.twig", 147)->unwrap()->yield($context);
+        // line 136
+        yield from         $this->loadTemplate("_partials/comment.html.twig", "produits/index.html.twig", 136)->unwrap()->yield($context);
         yield " 
     <!-- C O M M E N T - H E A D E R -->
     
@@ -303,16 +304,16 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
         <div class=\"header-container\">
             <picture>
                 <source media=\"(min-width: 768px)\" srcset=\"";
-        // line 155
+        // line 144
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1.jpg"), "html", null, true);
         yield "\">
                 <img class=\"header-image\" src=\"";
-        // line 156
+        // line 145
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/picture-1-phone.jpg"), "html", null, true);
         yield "\" alt=\"Header Image\">
             </picture>
             <img class=\"logo-flou\" src=\"";
-        // line 158
+        // line 147
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo-flou.png"), "html", null, true);
         yield "\" alt=\"Logo Flou\">
         </div>
@@ -380,7 +381,7 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  316 => 158,  311 => 156,  307 => 155,  296 => 147,  285 => 139,  281 => 138,  261 => 121,  249 => 112,  221 => 87,  208 => 77,  204 => 76,  194 => 69,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  317 => 147,  312 => 145,  308 => 144,  297 => 136,  286 => 128,  282 => 127,  262 => 110,  250 => 101,  235 => 89,  230 => 87,  221 => 81,  208 => 71,  204 => 70,  194 => 63,  183 => 55,  178 => 53,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -437,15 +438,9 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-tree\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">{{ article5.title }}</h1>
                 </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p class=\"p-text col-md-10\">{{ article5.text }}</p>
             </div>
         </div>
     </section>
@@ -477,14 +472,9 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-tree\"></i>
                     </div>
-                    <h1 class=\"title-text\">LOREM ISPUM ESTAS</h1>
+                    <h1 class=\"title-text\">{{ article6.title }}</h1>
                 </div>
-                <p class=\"p-text col-md-10\">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class=\"p-text col-md-10\">{{ article6.text }}
                 </p>
             </div>
         </div>
