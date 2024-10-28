@@ -183,10 +183,22 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article2"]) || array_key_exists("article2", $context) ? $context["article2"] : (function () { throw new RuntimeError('Variable "article2" does not exist.', 55, $this->source); })()), "text", [], "any", false, false, false, 55), "html", null, true);
         yield "</p>
                 <ul class=\"list-elements col-12\">
-                    <li class=\"p-liste\">4 Rue d’Aquitaine ZA de Cramat</li>
-                    <li class=\"p-liste\">40140 Soustons</li>
-                    <li class=\"p-liste\">0558411670</li>
-                    <li class=\"p-liste\">Deltabois40@Orange.fr</li>
+                    <li class=\"p-liste\">";
+        // line 57
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["coordonnees"]) || array_key_exists("coordonnees", $context) ? $context["coordonnees"] : (function () { throw new RuntimeError('Variable "coordonnees" does not exist.', 57, $this->source); })()), "adresse", [], "any", false, false, false, 57), "html", null, true);
+        yield "</li>
+                    <li class=\"p-liste\">";
+        // line 58
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["coordonnees"]) || array_key_exists("coordonnees", $context) ? $context["coordonnees"] : (function () { throw new RuntimeError('Variable "coordonnees" does not exist.', 58, $this->source); })()), "codePostal", [], "any", false, false, false, 58), "html", null, true);
+        yield "</li>
+                    <li class=\"p-liste\">";
+        // line 59
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["coordonnees"]) || array_key_exists("coordonnees", $context) ? $context["coordonnees"] : (function () { throw new RuntimeError('Variable "coordonnees" does not exist.', 59, $this->source); })()), "phone", [], "any", false, false, false, 59), "html", null, true);
+        yield "</li>
+                    <li class=\"p-liste\">";
+        // line 60
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["coordonnees"]) || array_key_exists("coordonnees", $context) ? $context["coordonnees"] : (function () { throw new RuntimeError('Variable "coordonnees" does not exist.', 60, $this->source); })()), "mail", [], "any", false, false, false, 60), "html", null, true);
+        yield "</li>
                 </ul>
             </div>
         </div>
@@ -316,7 +328,7 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  252 => 103,  247 => 101,  243 => 100,  232 => 92,  221 => 84,  217 => 83,  203 => 72,  183 => 55,  178 => 53,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  264 => 103,  259 => 101,  255 => 100,  244 => 92,  233 => 84,  229 => 83,  215 => 72,  200 => 60,  196 => 59,  192 => 58,  188 => 57,  183 => 55,  178 => 53,  169 => 47,  156 => 37,  152 => 36,  141 => 28,  131 => 21,  126 => 19,  122 => 18,  111 => 10,  103 => 5,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -377,10 +389,10 @@ class __TwigTemplate_92c43caa3cf5829170e0a5bb4dd5314a extends Template
                 </div>
                 <p class=\"p-text col-md-10 mx-auto\">{{ article2.text }}</p>
                 <ul class=\"list-elements col-12\">
-                    <li class=\"p-liste\">4 Rue d’Aquitaine ZA de Cramat</li>
-                    <li class=\"p-liste\">40140 Soustons</li>
-                    <li class=\"p-liste\">0558411670</li>
-                    <li class=\"p-liste\">Deltabois40@Orange.fr</li>
+                    <li class=\"p-liste\">{{ coordonnees.adresse }}</li>
+                    <li class=\"p-liste\">{{ coordonnees.codePostal }}</li>
+                    <li class=\"p-liste\">{{ coordonnees.phone }}</li>
+                    <li class=\"p-liste\">{{ coordonnees.mail }}</li>
                 </ul>
             </div>
         </div>

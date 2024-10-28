@@ -1,28 +1,30 @@
-    <section id="section-produits">
-        <div class="container-fluid row col-md-10 mx-auto mt-5 mt-md-5">
-            <img src="{{ asset('assets/images/picture-8.jpg') }}" alt="" class="picture-produits img-fluid col-md-6 order-md-2 order-1">
-            <div class="containt-text col-md-6 order-md-1 order-2">
-                <div class="containt-title">
-                    <div class="icon-bg">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h1 class="title-text">{{ article3.title }}</h1>
+<section id="section-produits">
+    <div class="container-fluid row col-md-10 mx-auto mt-5 mt-md-5">
+        <img src="{{ asset('assets/images/picture-8.jpg') }}" alt="" class="picture-produits img-fluid col-md-6 order-md-2 order-1">
+        <div class="containt-text col-md-6 order-md-1 order-2">
+            <div class="containt-title">
+                <div class="icon-bg">
+                    <i class="fa-solid fa-people-group"></i>
                 </div>
-                <p class="p-text col-md-10">{{ article3.text }}</p>
-                    <div class="col-12 row list-produits">
-                        <ul class="list-elements col-6">
-                            <li class="p-liste">BOIS RONDS</li>
-                            <li class="p-liste">BOIS BRUTS DE SCIAGE</li>
-                            <li class="p-liste">BOIS RABOTÉS</li>
-                            <li class="p-liste">TRAVERSES CHÊNE</li>
-                        </ul>
-                        <ul class="list-elements col-6">
-                            <li class="p-liste">PANNEAUX BRISE-VUE</li>
-                            <li class="p-liste">QUINCAILLERIES</li>
-                            <li class="p-liste">ENTRETIEN DU BOIS</li>
-                            <li class="p-liste">PRODUITS DERIVÉS</li>
-                        </ul>
-                    </div>
+                <h1 class="title-text">{{ article3.title }}</h1>
+            </div>
+            <p class="p-text col-md-10">{{ article3.text }}</p>
+            <div class="col-12 row list-produits">
+                <ul class="list-elements col-6">
+                    {% for produit in produits %}
+                        {% if produit.id >= 1 and produit.id <= 10 %}
+                            <li class="p-liste">{{ produit.name }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="list-elements col-6">
+                    {% for produit in produits %}
+                        {% if produit.id >= 11 and produit.id <= 20 %}
+                            <li class="p-liste">{{ produit.name }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>

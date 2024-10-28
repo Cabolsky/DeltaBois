@@ -36,7 +36,6 @@ class Color
     public function setCode(string $code): static
     {
         $this->code = $code;
-
         return $this;
     }
 
@@ -48,7 +47,6 @@ class Color
     public function setName(string $name): static
     {
         $this->name = $name;
-
         return $this;
     }
 
@@ -63,7 +61,6 @@ class Color
             $pub->setColor($this);
         }
         $this->pub = $pub;
-
         return $this;
     }
 }

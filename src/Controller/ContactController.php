@@ -6,6 +6,7 @@ use App\Entity\Pub;
 use App\Entity\Color;
 use App\Entity\Article;
 use App\Entity\Commentaire;
+use App\Entity\Coordonnees;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -29,6 +30,7 @@ class ContactController extends AbstractController
         $color4 = $this->getColorOrDefault($entityManager, 4);
         $color5 = $this->getColorOrDefault($entityManager, 5);
         $pub = $this->getPubOrDefault($entityManager, 1);
+        $coordonnees = $this->getCoordonnees($entityManager, 1);
 
         return $this->render('contact/index.html.twig', [
             'article1' => $article1,
@@ -39,6 +41,7 @@ class ContactController extends AbstractController
             'commentaire2' => $commentaire2,
             'commentaire3' => $commentaire3,
             'pub' => $pub,
+            'coordonnees' => $coordonnees,
         ]);
     }
 
@@ -85,5 +88,9 @@ class ContactController extends AbstractController
             $pub->setColor($defaultColor);
         }
         return $pub;
+    }
+    private function getCoordonnees(EntityManagerInterface $entityManager, int $id): ?Coordonnees
+    {
+        return $entityManager->getRepository(Coordonnees::class)->find($id);
     }
 }

@@ -2,33 +2,34 @@
 
 namespace App\Controller;
 
+use App\Entity\Pub;
+use App\Entity\Color;
 use App\Entity\Article;
 use App\Entity\Commentaire;
-use App\Entity\Color;
-use App\Entity\Pub;
+use App\Entity\Coordonnees;
+use App\Entity\Produits;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class IndexController extends AbstractController
 {
     #[Route('/', name: 'app_index')]
     public function index(EntityManagerInterface $entityManager): Response
     {
-        $article1 = $this->getArticleOrDefault($entityManager, 1);
-        $article2 = $this->getArticleOrDefault($entityManager, 2);
-        $article3 = $this->getArticleOrDefault($entityManager, 3);
-        $article4 = $this->getArticleOrDefault($entityManager, 4);
+        $article1 = $this->getArticle($entityManager, 1);
+        $article2 = $this->getArticle($entityManager, 2);
+        $article3 = $this->getArticle($entityManager, 3);
+        $article4 = $this->getArticle($entityManager, 4);
         $commentaire1 = $this->getCommentaireOrDefault($entityManager, 1);
         $commentaire2 = $this->getCommentaireOrDefault($entityManager, 2);
         $commentaire3 = $this->getCommentaireOrDefault($entityManager, 3);
-        $color1 = $this->getColorOrDefault($entityManager, 1);
-        $color2 = $this->getColorOrDefault($entityManager, 2);
-        $color3 = $this->getColorOrDefault($entityManager, 3);
-        $color4 = $this->getColorOrDefault($entityManager, 4);
-        $color5 = $this->getColorOrDefault($entityManager, 5);
+        $colorIds = [1, 2, 3, 4, 5];
+        $colors = $this->getColors($entityManager, $colorIds);
         $pub = $this->getPubOrDefault($entityManager, 1);
+        $coordonnees = $this->getCoordonnees($entityManager, 1);
+        $produits = $entityManager->getRepository(Produits::class)->findAll();
 
         return $this->render('index/index.html.twig', [
             'article1' => $article1,
@@ -38,24 +39,16 @@ class IndexController extends AbstractController
             'commentaire1' => $commentaire1,
             'commentaire2' => $commentaire2,
             'commentaire3' => $commentaire3,
-            'color1' => $color1,
-            'color2' => $color2,
-            'color3' => $color3,
-            'color4' => $color4,
-            'color5' => $color5,
+            'colors' => $colors,
             'pub' => $pub,
+            'coordonnees' => $coordonnees,
+            'produits' => $produits,
         ]);
     }
 
-    private function getArticleOrDefault(EntityManagerInterface $entityManager, int $id): Article
+    private function getArticle(EntityManagerInterface $entityManager, int $id): ?Article
     {
-        $article = $entityManager->getRepository(Article::class)->find($id);
-        if (!$article) {
-            $article = new Article();
-            $article->setTitle('UNE HISTOIRE DE FAMILLE');
-            $article->setText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.');
-        }
-        return $article;
+        return $entityManager->getRepository(Article::class)->find($id);
     }
 
     private function getCommentaireOrDefault(EntityManagerInterface $entityManager, int $id): Commentaire
@@ -69,15 +62,14 @@ class IndexController extends AbstractController
         return $commentaire;
     }
 
-    private function getColorOrDefault(EntityManagerInterface $entityManager, int $id): Color
+    private function getColor(EntityManagerInterface $entityManager, int $id): ?Color
     {
-        $color = $entityManager->getRepository(Color::class)->find($id);
-        if (!$color) {
-            $color = new Color();
-            $color->setCode('#ff0032');
-            $color->setName('Couleur par défaut');
-        }
-        return $color;
+        return $entityManager->getRepository(Color::class)->find($id);
+    }
+
+    private function getColors(EntityManagerInterface $entityManager, array $ids): array
+    {
+        return $entityManager->getRepository(Color::class)->findBy(['id' => $ids]);
     }
 
     private function getPubOrDefault(EntityManagerInterface $entityManager, int $id): Pub
@@ -85,10 +77,22 @@ class IndexController extends AbstractController
         $pub = $entityManager->getRepository(Pub::class)->find($id);
         if (!$pub) {
             $pub = new Pub();
-            $pub->setText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip');
-            $defaultColor = $this->getColorOrDefault($entityManager, 4);
-            $pub->setColor($defaultColor);
+            $pub->setText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam');
+            $color = $this->getColor($entityManager, 1);
+            if ($color) {
+                $pub->setColor($color);
+            }
         }
         return $pub;
+    }
+
+    private function getCoordonnees(EntityManagerInterface $entityManager, int $id): ?Coordonnees
+    {
+        return $entityManager->getRepository(Coordonnees::class)->find($id);
+    }
+
+    private function getProduits(EntityManagerInterface $entityManager, int $id): ?Produits
+    {
+        return $entityManager->getRepository(Produits::class)->find($id);
     }
 }

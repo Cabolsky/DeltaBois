@@ -35,7 +35,6 @@ class Pub
     public function setText(string $text): static
     {
         $this->text = $text;
-
         return $this;
     }
 
@@ -47,7 +46,9 @@ class Pub
     public function setColor(Color $color): static
     {
         $this->color = $color;
-
+        if ($color->getPub() !== $this) {
+            $color->setPub($this);
+        }
         return $this;
     }
 }
