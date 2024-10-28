@@ -22,6 +22,7 @@ class IndexController extends AbstractController
         $article2 = $this->getArticle($entityManager, 2);
         $article3 = $this->getArticle($entityManager, 3);
         $article4 = $this->getArticle($entityManager, 4);
+        $article5 = $this->getArticle($entityManager, 5);
         $commentaire1 = $this->getCommentaireOrDefault($entityManager, 1);
         $commentaire2 = $this->getCommentaireOrDefault($entityManager, 2);
         $commentaire3 = $this->getCommentaireOrDefault($entityManager, 3);
@@ -36,6 +37,7 @@ class IndexController extends AbstractController
             'article2' => $article2,
             'article3' => $article3,
             'article4' => $article4,
+            'article5' => $article5,
             'commentaire1' => $commentaire1,
             'commentaire2' => $commentaire2,
             'commentaire3' => $commentaire3,

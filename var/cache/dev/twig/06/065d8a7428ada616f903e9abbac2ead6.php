@@ -227,12 +227,12 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     </div>
                     <h1 class=\"title-text\">";
         // line 87
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article6"]) || array_key_exists("article6", $context) ? $context["article6"] : (function () { throw new RuntimeError('Variable "article6" does not exist.', 87, $this->source); })()), "title", [], "any", false, false, false, 87), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article5"]) || array_key_exists("article5", $context) ? $context["article5"] : (function () { throw new RuntimeError('Variable "article5" does not exist.', 87, $this->source); })()), "title", [], "any", false, false, false, 87), "html", null, true);
         yield "</h1>
                 </div>
                 <p class=\"p-text col-md-10\">";
         // line 89
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article6"]) || array_key_exists("article6", $context) ? $context["article6"] : (function () { throw new RuntimeError('Variable "article6" does not exist.', 89, $this->source); })()), "text", [], "any", false, false, false, 89), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["article5"]) || array_key_exists("article5", $context) ? $context["article5"] : (function () { throw new RuntimeError('Variable "article5" does not exist.', 89, $this->source); })()), "text", [], "any", false, false, false, 89), "html", null, true);
         yield "
                 </p>
             </div>
@@ -472,9 +472,9 @@ class __TwigTemplate_c47785781e63bc7768892b955fae7b2f extends Template
                     <div class=\"icon-bg\">
                         <i class=\"fa-solid fa-tree\"></i>
                     </div>
-                    <h1 class=\"title-text\">{{ article6.title }}</h1>
+                    <h1 class=\"title-text\">{{ article5.title }}</h1>
                 </div>
-                <p class=\"p-text col-md-10\">{{ article6.text }}
+                <p class=\"p-text col-md-10\">{{ article5.text }}
                 </p>
             </div>
         </div>
