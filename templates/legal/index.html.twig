@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block title %}LEGAL{% endblock %}
+{% block body %}
+
+
+    <!-- N A V B A R -->
+    {% include('_partials/navbar.html.twig') %} 
+    <!-- N A V B A R -->
+
+
+
+    <!-- L E G A L -->
+    <section id="condition">
+        <div class="d-flex justify-content-center align-items-center mt-md-5 mx-auto col-md-10">
+            <img src="{{ asset('assets/images/RGPF.png') }}" alt="" class="img-fluid mx-auto col-md-12">
+        </div>
+    </section>
+    <!-- L E G A L -->
+
+
+    <!-- P I C T U R E - R U L E -->
+    <section id="picture-rule">
+        <div class="header-container mt-md-5 mt-3">
+            <picture>
+                <source media="(min-width: 768px)" srcset="{{ asset('assets/images/wood-1.jpg') }}">
+                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Bandeau texturé bois foncé.">
+            </picture>
+        </div>
+    </section>
+    <!-- P I C T U R E - R U L E -->
+
+
+    
+    {% endblock %}

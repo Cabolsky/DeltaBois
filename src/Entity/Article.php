@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Article
 {
     #[ORM\Id]
+    #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
 
@@ -19,19 +20,12 @@ class Article
     #[ORM\Column(type: Types::TEXT)]
     private ?string $text = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $picture = null;
 
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function setId(int $id): static
-    {
-        $this->id = $id;
-
-        return $this;
     }
 
     public function getTitle(): ?string
@@ -63,7 +57,7 @@ class Article
         return $this->picture;
     }
 
-    public function setPicture(?string $picture): static
+    public function setPicture(string $picture): static
     {
         $this->picture = $picture;
 

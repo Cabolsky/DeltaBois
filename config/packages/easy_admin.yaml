@@ -1,0 +1,37 @@
+easy_admin:
+    site_name: 'DeltaBois'
+    dashboard:
+        controller: App\Controller\Admin\DashboardController
+    entities:
+        Article:
+            class: App\Entity\Article
+            controller: App\Controller\Admin\ArticleCrudController
+            form:
+                fields:
+                    - { property: 'title' }
+                    - { property: 'text' }
+                    - { property: 'picture', type: 'ImageField', base_path: 'assets/images', upload_dir: 'public/assets/images', required: false }
+        Commentaire:
+            class: App\Entity\Commentaire
+            controller: App\Controller\Admin\CommentaireCrudController
+        Cards:
+            class: App\Entity\Cards
+            controller: App\Controller\Admin\CardsCrudController
+        Produits:
+            class: App\Entity\Produits
+            controller: App\Controller\Admin\ProduitsCrudController
+        Pub:
+            class: App\Entity\Pub
+            controller: App\Controller\Admin\PubCrudController
+            form: 
+                fields:
+                    - { property: 'title' }
+                    - { property: 'color' }
+                    - { property: 'colorName' }
+                    - { property: 'isActive' }
+            list:
+                fields:
+                    - { property: 'id' }
+                    - { property: 'title' }
+                    - { property: 'colorName', label: 'Nom de la Couleur' } 
+                    - { property: 'isActive' }

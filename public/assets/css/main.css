@@ -5,6 +5,7 @@
 @import'shared/footer.css';
 @import'shared/icon.css';
 @import'shared/image-header.css';
+@import'shared/image-footer.css';
 @import'shared/navbar.css';
 @import'shared/picture-rule.css';
 @import'shared/section-family.css';
@@ -13,8 +14,13 @@
 @import'shared/section-produits.css';
 @import'shared/color.css';
 @import'shared/pub.css';
-
-
+@import'shared/mail.css';
+@import'shared/alerte.css';
+@import'shared/after-mail.css';
+@import'shared/login.css';
+@import'shared/details.css';
+@import'shared/rgpd.css';
+@import'shared/effect.css';
 body {
 	margin: 0;
 	display: flex;
@@ -29,7 +35,7 @@ body {
 .p-comment{
     font-family: 'Darker Grotesque';
     color: var(--color-two);
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .title-text{
     font-family: 'Bebas Neue', sans-serif;
@@ -39,7 +45,7 @@ body {
 .p-text{
     font-family: 'Darker Grotesque';
     color: var(--color-two);
-    font-size: 3vw;
+    font-size: 4vw;
 }
 @media (min-width: 768px) {
     .title-comment{

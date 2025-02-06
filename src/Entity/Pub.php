@@ -3,9 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\PubRepository;
-use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use App\Entity\Color;
 
 #[ORM\Entity(repositoryClass: PubRepository::class)]
 class Pub
@@ -15,40 +13,65 @@ class Pub
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $text = null;
+    #[ORM\Column(length: 255)]
+    private ?string $title = null;
 
-    #[ORM\OneToOne(targetEntity: Color::class, cascade: ["persist", "remove"])]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Color $color = null;
+    #[ORM\Column(length: 7)]
+    private ?string $color = null;
+
+    #[ORM\Column(length: 50)] 
+    private ?string $colorName = null; 
+
+    #[ORM\Column(type: 'boolean')]
+    private ?bool $isActive = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getText(): ?string
+    public function getTitle(): ?string
     {
-        return $this->text;
+        return $this->title;
     }
 
-    public function setText(string $text): static
+    public function setTitle(string $title): static
     {
-        $this->text = $text;
+        $this->title = $title;
         return $this;
     }
 
-    public function getColor(): ?Color
+    public function getColor(): ?string
     {
         return $this->color;
     }
 
-    public function setColor(Color $color): static
+    public function setColor(string $color): static
     {
         $this->color = $color;
-        if ($color->getPub() !== $this) {
-            $color->setPub($this);
-        }
         return $this;
     }
+
+    public function getColorName(): ?string  
+    {
+        return $this->colorName;
+    }
+
+    public function setColorName(string $colorName): static  
+    {
+        $this->colorName = $colorName;
+        return $this;
+    }
+
+    public function isActive(): ?bool
+    {
+        return $this->isActive;
+    }
+
+    public function setIsActive(bool $isActive): static
+    {
+        $this->isActive = $isActive;
+        return $this;
+    }
+
 }

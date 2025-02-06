@@ -10,7 +10,6 @@
 #navbar .container-fluid {
     padding-left: 0;
     padding-top: 0;
-
 }
 .navbar-toggler {
     position: absolute;
@@ -31,7 +30,6 @@
     height: 15vw; 
     z-index: 1000; 
 }
-
 #navbar .navbar {
     background-color: #ffffff;
     height: 100%;
@@ -41,7 +39,7 @@
     backdrop-filter: blur(10px);
     height: 100vh;
     width: 100%;
-    position: fixed;
+    position: fixed;    
     top: 15vw;
     left: 0;
     z-index: 999;
@@ -55,10 +53,18 @@
 }
 #navbar .navbar .nav-link.active {
     color: var(--color-one);
-    font-weight: 900;
+    font-weight: 500;
 }
-#scrolling-banner {
+#navbar #scrolling-banner {
     padding-top: 15vw;
+}
+.navbar .nav-link {
+    color: #774242; 
+    font-weight: bold;
+    font-size: 8vw; 
+    font-family: 'Darker Grotesque';
+    letter-spacing: 1vw;
+    padding: 5vw;
 }
 @media (min-width: 768px) {
     #navbar {
@@ -94,7 +100,7 @@
     }
     #navbar .navbar .nav-link.active {
         color: var(--color-one);
-        font-weight: 900;
+        font-weight: 500;
     }
     #navbar .navbar-collapse {
         background-color: transparent;

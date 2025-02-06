@@ -1,7 +1,6 @@
 #scrolling-banner {
     width: 100vw;
     height: 10vw; 
-
     color: #fff;
     display: flex;
     align-items: center; 
@@ -11,7 +10,7 @@
     top: 15vw; 
     font-family: "Darker Grotesque", sans-serif;
     font-size: 5vw;
-    font-weight: 600;
+    font-weight: 400;
     z-index: 999;
     padding: 0; 
     letter-spacing: 0.1vw;
@@ -19,7 +18,7 @@
 #scrolling-banner p {
     white-space: nowrap;
     display: inline-block;
-    animation: scroll-text 20s linear infinite;
+    animation: scroll-text 100s linear infinite;
     will-change: transform;
 }
 @keyframes scroll-text {
@@ -34,7 +33,6 @@
     #scrolling-banner {
         width: 100vw;
         height: 2.5vw;
-
         color: #fff;
         display: flex;
         align-items: center;
@@ -44,13 +42,13 @@
         top: 3vw;
         font-family: "Darker Grotesque", sans-serif;
         font-size: 1vw;
-        font-weight: 600;
+        font-weight: 400;
         z-index: 999; 
     }
     #scrolling-banner p {
         white-space: nowrap;
         display: inline-block;
-        animation: scroll-text 20s linear infinite;
+        animation: scroll-text 100s linear infinite;
         will-change: transform;
     }
 }

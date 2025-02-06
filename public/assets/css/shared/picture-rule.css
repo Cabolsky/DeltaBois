@@ -2,6 +2,7 @@
     width: 100%; 
     height: auto; 
     object-fit: cover; 
+    opacity: 90%;
 }
 #picture-rule .header-container {
     width: 100%; 

@@ -3,22 +3,26 @@
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ path('app_index') }}">
-                <img src="{{ asset('assets/images/logo.png') }}" class="logo-nav" alt="Logo">
+                <img src="{{ asset('assets/images/logo.png') }}" class="logo-nav" alt="Logo DeltaBois.">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mt-5 mt-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ path('app_index') }}">ACCUEIL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_produits') }}">NOS PRODUITS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_contact') }}">CONTACT</a>
-                    </li>
+<li class="nav-item">
+    <a class="nav-link {% if app.request.get('_route') == 'app_index' %}active{% endif %}" 
+       href="{{ path('app_index') }}">ACCUEIL</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link {% if app.request.get('_route') == 'app_produits' %}active{% endif %}" 
+       href="{{ path('app_produits') }}">NOS PRODUITS</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link {% if app.request.get('_route') == 'app_contact' %}active{% endif %}" 
+       href="{{ path('app_contact') }}">CONTACT</a>
+</li>
+
                 </ul>
                 <div class="containt-flag">
                     <div class="bg-blue"></div>

@@ -8,28 +8,16 @@ use Doctrine\Persistence\ObjectManager;
 
 class CoordonneesFixtures extends Fixture
 {
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager): void
     {
-        $coordonneesData = [
-            [
-                'adresse' => '4 Rue d’Aquitaine ZA de Cramat',
-                'codePostal' => '40140 Soustons',
-                'phone' => '0558411670',
-                'mail' => 'Deltabois40@Orange.fr',
-            ],
-        ];
+        $coordonnees = new Coordonnees();
+        $coordonnees->setAdresse('4 Rue d’Aquitaine ZA de Cramat');
+        $coordonnees->setVille('40140 SOUSTONS');
+        $coordonnees->setTelephone('0558411670');
+        $coordonnees->setMail('Deltabois40@Orange.fr');
 
-        foreach ($coordonneesData as $data) {
-            $coordonnees = new Coordonnees();
-
-            $coordonnees->setAdresse($data['adresse']);
-            $coordonnees->setCodePostal($data['codePostal']);
-            $coordonnees->setPhone($data['phone']);
-            $coordonnees->setMail($data['mail']);
-
-            $manager->persist($coordonnees);
-        }
-
+        $manager->persist($coordonnees);
+        
         $manager->flush();
     }
 }

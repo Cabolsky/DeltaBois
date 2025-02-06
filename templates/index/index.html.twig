@@ -1,6 +1,29 @@
 {% extends 'base.html.twig' %}
 {% block title %}ACCUEIL{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DeltaBois",
+      "image": "{{ asset('assets/images/logo.png') }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4 Rue d’Aquitaine ZA de Cramat",
+        "addressLocality": "Soustons",
+        "postalCode": "40140",
+        "addressCountry": "FR"
+      },
+      "telephone": "{{ coord.telephone }}",
+      "email": "{{ coord.mail }}",
+      "url": "{{ path('index') }}"
+    }
+    </script>
+{% endblock %}
 {% block body %}
+
+
     <!-- N A V B A R -->
     {% include('_partials/navbar.html.twig') %} 
     <!-- N A V B A R -->
@@ -15,10 +38,9 @@
     <section id="picture-header">
         <div class="header-container mt-md-5 mt-0">
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('assets/images/picture-1.jpg') }}">
-                <img class="header-image" src="{{ asset('assets/images/picture-1-phone.jpg') }}" alt="Header Image">
+                <source media="(min-width: 768px)" srcset="{{ asset('assets/images/img-header-inde.jpg') }}">
+                <img class="header-image" src="{{ asset('assets/images/img-header-index-phone.jpg') }}" alt="Photo aérienne de l'entrepôt.">
             </picture>
-            <img class="logo-flou" src="{{ asset('assets/images/logo-flou.png') }}" alt="Logo Flou">
         </div>
     </section>
     <!-- P I C T U R E - H E A D E R -->
@@ -34,35 +56,37 @@
         <div class="header-container mt-md-4">
             <picture>
                 <source media="(min-width: 768px)" srcset="{{ asset('assets/images/wood-1.jpg') }}">
-                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Header Image">
+                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Bandeau texturé bois foncé.">
             </picture>
         </div>
     </section>
     <!-- P I C T U R E - R U L E -->
 
+
     <!-- P I C T U R E - R I G H T -->
     <section id="section-right">
         <div class="container-fluid row col-md-10 mx-auto mt-5 mt-md-5">
-            <img src="{{ asset('assets/images/picture-3.jpg') }}" alt="" class="picture-right img-fluid col-md-6 order-md-2 order-1">
+            <img src="{{ asset('assets/images/' ~ (Article1.picture|default('article-1.jpg'))) }}" alt="Photo du fondateur et du directeur de l’entreprise DeltaBois." class="picture-right img-fluid col-md-6 order-md-2 order-1">
             <div class="containt-text col-md-6 order-md-1 order-2">
                 <div class="containt-title">
                     <div class="icon-bg">
-                        <i class="fa-solid fa-tree"></i>
+                        <i class="fa-solid fa-people-group"></i>
                     </div>
-                    <h1 class="title-text">{{ article1.title }}</h1>
+                    <h1 class="title-text">{{ Article1.title }}</h1>
                 </div>
-                <p class="p-text col-md-10">{{ article1.text }}</p>
+                <p class="p-text col-md-10">{{ Article1.text }}
+                </p>
             </div>
         </div>
     </section>
     <!-- P I C T U R E - R I G H T -->
 
-
+    
     <!-- P R E S E N T A T I O N -->
     <section id="section-family">
         <div class="container-family col-md-8 mx-auto mt-4 mt-md-5">
             <div class="presentation">
-                <img src="{{ asset('assets/images/picture-5.jpg') }}" alt="Hugo CAZADIEU" class="round-image">
+                <img src="{{ asset('assets/images/people-1.jpg') }}" alt="Fondateur." class="round-image">
                 <p class="p-name my-2 mt-md-3">
                     <span>J</span>
                     <span>E</span>
@@ -87,7 +111,7 @@
                 <p class="p-grade my-0">PATRON</p>
             </div>
             <div class="presentation">
-                <img src="{{ asset('assets/images/picture-4.jpg') }}" alt="Person 2" class="round-image">
+                <img src="{{ asset('assets/images/people-2.jpg') }}" alt="Directeur" class="round-image">
                 <p class="p-name my-2 mt-md-3">
                     <span>H</span>
                     <span>U</span>
@@ -106,7 +130,7 @@
                 <p class="p-grade my-0">DIRECTEUR</p>
             </div>
             <div class="presentation">
-                <img src="{{ asset('assets/images/picture-6.jpg') }}" alt="Person 3" class="round-image">
+                <img src="{{ asset('assets/images/people-3.jpg') }}" alt="Personne charger de la livraison." class="round-image">
                 <p class="p-name my-2 mt-md-3">
                     <span>C</span>
                     <span>H</span>
@@ -134,21 +158,35 @@
 
     <!-- P I C T U R E - L E F T -->
     <section id="section-left">
-        <div class="container-fluid row col-md-10 mx-auto mt-5  mt-md-5">
-            <img src="{{ asset('assets/images/picture-7.jpg') }}" alt="Photo du Chateau Lucas II" class="picture-left img-fluid col-md-6 order-md-1 order-1">
+        <div class="container-fluid row col-md-10 mx-auto mt-5 mt-md-5">
+            <img src="{{ asset('assets/images/' ~ (Article2.picture|default('article-2.jpg'))) }}" alt="Photo de la carte de visite de DeltaBois." class="picture-left img-fluid col-md-6 order-md-1 order-1">
             <div class="containt-text col-md-6 order-md-2 order-2">
                 <div class="containt-title">
                     <div class="icon-bg">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <h1 class="title-text">{{ article2.title }}</h1>
+                    <h1 class="title-text">{{ Article2.title }}</h1>
                 </div>
-                <p class="p-text col-md-10 mx-auto">{{ article2.text }}</p>
+                <p class="p-text col-md-10 mx-auto">{{ Article2.text }}</p>
                 <ul class="list-elements col-12">
-                    <li class="p-liste">{{ coordonnees.adresse }}</li>
-                    <li class="p-liste">{{ coordonnees.codePostal }}</li>
-                    <li class="p-liste">{{ coordonnees.phone }}</li>
-                    <li class="p-liste">{{ coordonnees.mail }}</li>
+                    {% for coord in coordonnees %}
+                        <li class="p-liste">
+                            <a href="https://www.google.fr/maps/place/SARL+DELTABOIS/@43.746488,-1.3350736,15.75z/data=!4m6!3m5!1s0xd5157aa489d4281:0x7c30fbf3d705fdf0!8m2!3d43.7465443!4d-1.3314309!16s%2Fg%2F1tczlt31?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="liste">
+                                {{ coord.adresse }}
+                            </a>
+                        </li>
+                        <li class="p-liste">
+                            <a href="https://www.google.fr/maps/place/40140+Soustons/@43.7540142,-1.3716529,13z/data=!3m1!4b1!4m6!3m5!1s0xd5157adf33439bb:0x406651748162c50!8m2!3d43.75562!4d-1.326638!16s%2Fm%2F03m4m52?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="liste">
+                                {{ coord.ville }}
+                            </a>
+                        </li>
+                        <li class="p-liste">
+                            <a href="tel:{{ coord.telephone }}" class="liste">{{ coord.telephone }}</a>
+                        </li>
+                        <li class="p-liste">
+                            <a href="mailto:{{ coord.mail }}" class="liste">{{ coord.mail }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -158,10 +196,10 @@
     
     <!-- P I C T U R E - R U L E -->
     <section id="picture-rule">
-        <div class="header-container mt-md-5">
+        <div class="header-container mt-md-5 mt-3">
             <picture>
                 <source media="(min-width: 768px)" srcset="{{ asset('assets/images/wood-1.jpg') }}">
-                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Header Image">
+                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Bandeau texturé bois foncé.">
             </picture>
         </div>
     </section>
@@ -176,15 +214,15 @@
     <!-- P I C T U R E - L E F T -->
     <section id="section-left">
         <div class="container-fluid row col-md-10 mx-auto mt-5  mt-md-5">
-            <img src="{{ asset('assets/images/picture-7.jpg') }}" alt="Photo du Chateau Lucas II" class="picture-left img-fluid col-md-6 order-md-1 order-1">
+                <img src="{{ asset('assets/images/' ~ (Article4.picture|default('article-4.jpg'))) }}" alt="Photo du livreur de l’entreprise chargeant une livraison sur le camion." class="picture-left img-fluid col-md-6 order-md-1 order-1">     
             <div class="containt-text col-md-6 order-md-2 order-2">
                 <div class="containt-title">
                     <div class="icon-bg">
                         <i class="fa-solid fa-truck"></i>
                     </div>
-                    <h1 class="title-text">{{ article4.title }}</h1>
+                    <h1 class="title-text">{{ Article4.title }}</h1>
                 </div>
-                <p class="p-text col-md-10 mx-auto">{{ article4.text }}</p>
+                <p class="p-text col-md-10 mx-auto">{{ Article4.text }}</p>
                 <ul class="list-elements col-12">
                     <li class="p-liste">LANDES</li>
                     <li class="p-liste">PAYS-BASQUE</li>
@@ -197,10 +235,10 @@
 
     <!-- P I C T U R E - R U L E -->
     <section id="picture-rule">
-        <div class="header-container mt-md-5">
+        <div class="header-container mt-md-5 mt-3 ">
             <picture>
                 <source media="(min-width: 768px)" srcset="{{ asset('assets/images/wood-1.jpg') }}">
-                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Header Image">
+                <img class="header-image" src="{{ asset('assets/images/wood-1-phone.jpg') }}" alt="Bandeau texturé bois foncé.">
             </picture>
         </div>
     </section>
@@ -212,46 +250,25 @@
     <!-- C O M M E N T - H E A D E R -->
     
     
-    <!-- P I C T U R E - H E A D E R -->
-    <section id="picture-header">
-        <div class="header-container">
+    <!-- P I C T U R E - F O O T E R -->
+    <section id="picture-footer">
+        <div class="header-container mt-md-5 mt-0">
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('assets/images/picture-1.jpg') }}">
-                <img class="header-image" src="{{ asset('assets/images/picture-1-phone.jpg') }}" alt="Header Image">
+                <source media="(min-width: 768px)" srcset="{{ asset('assets/images/img-header-inde.jpg') }}">
+                <img class="header-image" src="{{ asset('assets/images/img-header-index-phone.jpg') }}" alt="Photo aérienne de l'entrepôt.">
             </picture>
-            <img class="logo-flou" src="{{ asset('assets/images/logo-flou.png') }}" alt="Logo Flou">
         </div>
     </section>
-    <!-- P I C T U R E - H E A D E R -->
+    <!-- P I C T U R E - F O O T E R -->
 
 
     <!-- F O O T E R -->
     <section id="footer">
-        <footer class="navbar navbar-expand-md navbar-light bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">  
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footerNav" aria-controls="footerNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="footerNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">À PROPOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NOS SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <div class="container-fluid d-flex row justify-content-center align-items-center mx-auto col-12">
+            <a href="{{ path('app_legal') }}" class="footer-text col-12">MENTIONS LÉGALES & CONFIDENTIALITÉ</a>
+        </div>
     </section>
     <!-- F O O T E R -->
-{% endblock %}
+
+    
+    {% endblock %}

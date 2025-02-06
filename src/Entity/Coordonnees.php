@@ -2,9 +2,8 @@
 
 namespace App\Entity;
 
-use App\Entity\Coordonnees;
-use Doctrine\ORM\Mapping as ORM;
 use App\Repository\CoordonneesRepository;
+use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CoordonneesRepository::class)]
 class Coordonnees
@@ -18,10 +17,10 @@ class Coordonnees
     private ?string $adresse = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $codePostal = null;
+    private ?string $ville = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $phone = null;
+    private ?string $telephone = null;
 
     #[ORM\Column(length: 255)]
     private ?string $mail = null;
@@ -43,26 +42,26 @@ class Coordonnees
         return $this;
     }
 
-    public function getCodePostal(): ?string
+    public function getVille(): ?string
     {
-        return $this->codePostal;
+        return $this->ville;
     }
 
-    public function setCodePostal(string $codePostal): static
+    public function setVille(string $ville): static
     {
-        $this->codePostal = $codePostal;
+        $this->ville = $ville;
 
         return $this;
     }
 
-    public function getPhone(): ?string
+    public function getTelephone(): ?string
     {
-        return $this->phone;
+        return $this->telephone;
     }
 
-    public function setPhone(string $phone): static
+    public function setTelephone(string $telephone): static
     {
-        $this->phone = $phone;
+        $this->telephone = $telephone;
 
         return $this;
     }

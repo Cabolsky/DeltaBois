@@ -1,3 +1,12 @@
-<div id="scrolling-banner" style="background-color: {{ pub.color.code }}">
-    <p class="p-pub mt-md-3">{{ pub.text }}</p>
-</div>
+<!--  P U B  -->
+{% if activePub %}
+    <div id="scrolling-banner" style="background-color: {{ activePub.color }}; width: 100%; overflow: hidden;">
+        <p class="p-pub mt-3" style="white-space: nowrap; display: inline-block; animation: scroll-text 20s linear infinite;">{{ activePub.title }}</p>
+    </div>
+{% endif %}
+<!--  P U B  -->
+
+
+<!--  S T Y L E  -->
+
+<!--  S T Y L E  -->

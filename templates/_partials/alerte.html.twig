@@ -1,0 +1,17 @@
+<!-- A L E R T E -->
+<section id="alerte">
+    <div class="container-fluid">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success alert-center d-flex align-items-center justify-content-center">
+                <i class="fas fa-check-circle icon-blink"></i>
+                <span class="text-alert">{{ message }}</span>
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('danger') %}
+            <div class="alert alert-danger alert-center">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+<!-- A L E R T E -->

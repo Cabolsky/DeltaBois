@@ -1,0 +1,80 @@
+<!--  F O R M - C O N T A C T -->
+<section id="contact-section">
+    <div class="container-fluid row col-md-10 mx-auto mt-5">
+        <div class="containt-text col-md-6 order-md-1 order-2">
+            <div class="containt-title">
+                <div class="icon-bg">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h1 class="title-text">{{ Article6.title }}</h1>
+            </div>
+            <p class="p-text col-md-10">{{ Article6.text }}</p>
+            <img src="{{ asset('assets/images/' ~ (Article6.picture|default('article-6.jpg'))) }}" 
+                 alt="Photo de la carte de visite de DeltaBois." 
+                 class="article-image img-fluid col-md-10 mt-3">
+        </div>
+        <div class="contact-form col-md-6 order-md-2 order-2 mt-4 mt-md-0">
+        {% if messageSent %}
+            <div class="after-mail">
+                <div class="container-fluid">
+                        <div class="alert alert-success alert-center d-flex align-items-center justify-content-center">
+                            <i class="fas fa-check-circle icon-blink" style="background-color: #009e1a !important;"></i>
+                            <span class="text-alert">E-MAIL ENVOYER</span>
+                        </div>
+                </div>
+            </div>
+        {% else %}
+                {{ form_start(form) }}
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="icon-label">
+                            <i class="fas fa-user"></i>
+                            {{ form_label(form.nom, 'NOM :') }}
+                        </div>
+                        {{ form_widget(form.nom, {'attr': {'placeholder': 'Entrez votre nom.'}}) }}
+                        {{ form_errors(form.nom) }}
+                    </div>
+                    <div class="form-group">
+                        <div class="icon-label">
+                            <i class="fas fa-user"></i>
+                            {{ form_label(form.prenom, 'PRÉNOM :') }}
+                        </div>
+                        {{ form_widget(form.prenom, {'attr': {'placeholder': 'Entrez votre prénom.'}}) }}
+                        {{ form_errors(form.prenom) }}
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="icon-label">
+                            <i class="fas fa-phone"></i>
+                            {{ form_label(form.telephone, 'TÉLÉPHONE :') }}
+                        </div>
+                        {{ form_widget(form.telephone, {'attr': {'placeholder': 'Entrez votre numéro de téléphone.'}}) }}
+                        {{ form_errors(form.telephone) }}
+                    </div>
+                    <div class="form-group">
+                        <div class="icon-label">
+                            <i class="fas fa-envelope"></i>
+                            {{ form_label(form.email, 'E-MAIL :') }}
+                        </div>
+                        {{ form_widget(form.email, {'attr': {'placeholder': 'Entrez votre e-mail.'}}) }}
+                        {{ form_errors(form.email) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="icon-label">
+                        <i class="fas fa-comment"></i>
+                        {{ form_label(form.message, 'MESSAGE :') }}
+                    </div>
+                    {{ form_widget(form.message, {'attr': {'placeholder': 'Entrez votre message ici.'}}) }}
+                    {{ form_errors(form.message) }}
+                </div>
+                <div id="submit">
+                    {{ form_widget(form.submit, {'attr': {'class': 'mt-md-3', 'id': 'send_message'}}) }}
+                </div>
+                {{ form_end(form) }}
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!--  F O R M - C O N T A C T -->
